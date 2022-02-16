@@ -1,0 +1,1 @@
+kubectl {%if namespace!= "" %} -n {{namespace}} {% endif %} {{command}}

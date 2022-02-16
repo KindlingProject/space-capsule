@@ -1,0 +1,1 @@
+kubectl patch {{resource_type}} {{resource_name}} {%if namespace!= "" %} -n {{namespace}} {% endif %} -p {{patch}} --record

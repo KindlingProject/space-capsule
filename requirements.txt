@@ -1,0 +1,4 @@
+setuptools~=60.8.1
+Jinja2~=3.0.3
+click~=8.0.3
+jsonpath~=0.82

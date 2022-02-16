@@ -1,0 +1,17 @@
+apiVersion: chaosblade.io/v1alpha1
+kind: ChaosBlade
+metadata:
+  name: {{experiment_name}}
+spec:
+  experiments:
+  - scope: {{ scope }}
+    target: {{ target }}
+    action: {{ action }}
+    desc: {{ desc }}
+    matchers:
+{% for match in matchers%}
+{% if match.value %}
+    - name: {{ match.name }}
+      value: ["{{ match.value }}"]
+{% endif %}
+{% endfor -%}
