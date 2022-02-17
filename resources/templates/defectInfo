@@ -1,5 +1,5 @@
-defect-name: {{ defect_name }}
-defect-description: {{ defect_desc }}
+defect-name: {{ expertiment_name }}
+defect-description: {{ desc }}
 create-time: {{ create_time }}
 status: {{ status }}
 {% if end_time %}

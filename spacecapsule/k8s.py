@@ -55,12 +55,15 @@ def executor_command_inside_namespaced_pod(api_instance, namespace, name, comman
     api_response = stream(api_instance.connect_get_namespaced_pod_exec, name, namespace,
                           command=command,
                           stderr=True, stdin=False,
-                          stdout=True, tty=False)
-    return api_response
+                          stdout=True, tty=False,
+                          _preload_content=False
+                          )
+    stdout = api_response.readline_stdout(timeout=3)
+    stderr = api_response.readline_stderr(timeout=3)
+    api_response.close()
+    return stdout, stderr
 
 
 def check_exist_inside_namespaced_pod(api_instance, namespace, name, file_path):
     command = 'test -x {}'.format(file_path)
-    executor_command_inside_namespaced_pod(api_instance,namespace,name,command)
-
-
+    executor_command_inside_namespaced_pod(api_instance, namespace, name, command)

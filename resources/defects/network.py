@@ -23,27 +23,12 @@ from spacecapsule.executor import bash_executor
 from spacecapsule.template import chaosblade_resource, chaosblade_resource_script
 
 
-@click.command()
-@click.argument('scope')
-@click.argument('interface')
-@click.argument('time')
-@click.argument('experiment-name')
-@click.option('-dip', '--destination-ip', 'destination_ip')
-@click.option('-rport', '--remote-port', 'remote-port')
-@click.option('-lport', '--local-port', 'local_port')
-@click.option('--offset', 'offset')
-@click.option('--timeout', 'timeout')
-@click.option('--exclude-ip', 'exclude_ip')
-@click.option('--exclude-port', 'exclude_port')
-@click.option('--labels', 'labels')
-@click.option('--namespace', 'namespace')
-@click.option('--names', 'names')
 def delay(scope, interface, time, experiment_name, destination_ip, remote_port, local_port, offset, timeout,
-          exclude_ip, exclude_port, labels, namespace, names):
+          exclude_ip, exclude_port, labels, namespace, names, desc):
     args = locals()
     args['action'] = 'delay'
     args['target'] = 'network'
-    args['desc'] = 'package delay'
+    args['desc'] = 'package delay:' + desc
     args['matchers'] = [
         {
             'name': 'interface',
