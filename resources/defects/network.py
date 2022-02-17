@@ -37,8 +37,9 @@ from spacecapsule.template import chaosblade_resource, chaosblade_resource_scrip
 @click.option('--exclude-port', 'exclude_port')
 @click.option('--labels', 'labels')
 @click.option('--namespace', 'namespace')
+@click.option('--names', 'names')
 def delay(scope, interface, time, experiment_name, destination_ip, remote_port, local_port, offset, timeout,
-          exclude_ip, exclude_port, labels, namespace):
+          exclude_ip, exclude_port, labels, namespace, names):
     args = locals()
     args['action'] = 'delay'
     args['target'] = 'network'
@@ -57,7 +58,7 @@ def delay(scope, interface, time, experiment_name, destination_ip, remote_port, 
             'value': destination_ip
         },
         {
-            'name': 'destination-port',
+            'name': 'remote-port',
             'value': remote_port
         },
         {
@@ -87,6 +88,10 @@ def delay(scope, interface, time, experiment_name, destination_ip, remote_port, 
         {
             'name': 'namespace',
             'value': namespace
+        },
+        {
+            'name':'names',
+            'value': names,
         }
     ]
     # defects_info(args)
@@ -128,8 +133,8 @@ def loss(scope, interface, percent, experiment_name, destination_ip, remote_port
             'value': destination_ip
         },
         {
-            'name': 'destination-port',
-            'value': destination_port
+            'name': 'remote-port',
+            'value': remote_port
         },
         {
             'name': 'local-port',
@@ -163,59 +168,6 @@ def loss(scope, interface, percent, experiment_name, destination_ip, remote_port
     # defects_info(args)
     bash_executor(chaosblade_resource_script, chaosblade_resource, rollback_args, 'chaosbladeResource-rollback.sh',
                   args)
-
-
-#
-def delay_pod_calico_local_port(scope, interface, time, experiment_name, destination_ip, local_port,
-                                offset, timeout,
-                                exclude_ip, exclude_port, labels, namespace):
-    args = locals()
-    args['scope'] = 'pod'
-    args['matchers'] = [
-        {
-            'name': 'interface',
-            'value': "getResource"
-        },
-        {
-            'name': 'time',
-            'value': time
-        },
-        {
-            'name': 'destination-ip',
-            'value': destination_ip
-        },
-        {
-            'name': 'remote-port',
-            'value': local_port
-        },
-        {
-            'name': 'offset',
-            'value': offset
-        },
-        {
-            'name': 'timeout',
-            'value': timeout
-        },
-        {
-            'name': 'exclude-ip',
-            'value': exclude_ip
-        },
-        {
-            'name': 'exclude-port',
-            'value': exclude_port
-        },
-        {
-            'name': 'labels',
-            'value': labels
-        },
-        {
-            'name': 'namespace',
-            'value': namespace
-        }
-    ]
-    bash_executor(chaosblade_resource_script, chaosblade_resource, rollback_args, 'chaosbladeResource-rollback.sh',
-                  args)
-
 
 def to_chaos_args(args):
     chaos_args = []

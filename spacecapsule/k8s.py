@@ -1,16 +1,16 @@
 import tarfile
 from tempfile import TemporaryFile
 
+from kubernetes import config
 from kubernetes.client import Configuration
 from kubernetes.client.api import core_v1_api
-from kubernetes.leaderelection.example import config
 from kubernetes.stream import stream
 
 from spacecapsule.template import resource_path
 
 
 def prepare_api(configfile):
-    config.load_kube_config(configfile)
+    config.load_kube_config()
     try:
         c = Configuration().get_default_copy()
     except AttributeError:
@@ -56,8 +56,7 @@ def executor_command_inside_namespaced_pod(api_instance, namespace, name, comman
                           command=command,
                           stderr=True, stdin=False,
                           stdout=True, tty=False)
-
-    print("Response: " + api_response)
+    return api_response
 
 
 def check_exist_inside_namespaced_pod(api_instance, namespace, name, file_path):
