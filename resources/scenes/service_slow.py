@@ -6,9 +6,50 @@ from resources.defects.network import delay
 from spacecapsule.k8s import prepare_api, executor_command_inside_namespaced_pod
 
 
-# case1:
-def node_network_delay(interface):
-    print("TODO")
+# case1:node network delay
+@click.command()
+@click.option('--node-node', 'node_name')
+@click.option('--interface', 'interface')
+@click.option('--time', 'time', default=3000)
+@click.option('--offset', 'offset', default=100)
+@click.option('--timeout', 'timeout', default=10000)
+@click.option('--kube-config', 'kube_config', default="~/.kube/config")
+def case1(node_name, interface, time, offset, timeout, kube_config):
+    node_network_delay(node_name, interface, time, offset, None, None, timeout, kube_config)
+
+
+def node_network_delay(node_name, interface, time, offset, remote_port, local_port, timeout, kube_config):
+    global api_instance, node_ip
+    api_instance = prepare_api(kube_config)
+    if node_name is None:
+        # Choose a node
+        pod_list = api_instance.list_namespaced_pod("practice")
+        pod = select_pod_from_ready(pod_list.items)
+        node_ip = pod.status.host_ip
+        node_name = pod.spec.node_name
+        print("select node_name:", node_name)
+    if interface is None:
+        # Choose a interface
+        commands = [
+            '/bin/sh',
+            '-c',
+            'ifconfig | grep -B 1 {}'.format(node_ip) + '| awk \'NR==1{print $1}\'',
+            ]
+
+        chaosblade_pod_list = api_instance.list_namespaced_pod('chaosblade')
+        for chaosblade_pod in chaosblade_pod_list.items:
+            if chaosblade_pod.spec.node_name == node_name:
+                stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade',
+                                                                        chaosblade_pod.metadata.name,
+                                                                        commands)
+                interface = stdout
+                print("select interface:", interface)
+                break
+
+    print("interface:", interface, "node_name:", node_name)
+    delay('node', interface, time, 'case1', None, remote_port, local_port, offset, timeout,
+          None, '22,10250', None, None, node_name, 'Insert a network delay into node {}, time {}, offset {}, timeout {}'
+          .format(node_name, time, offset, timeout))
 
 
 # case2 only calico now
@@ -73,3 +114,4 @@ def pod_ready(pod):
         if condition.type == 'Ready' and condition.status == 'True':
             return True
     return False
+
