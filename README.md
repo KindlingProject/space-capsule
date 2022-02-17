@@ -16,9 +16,9 @@ Kindling 是一款基于标准化错误定界和定位理念设计的开源监�
 
 ## How to start
 
-1. 使用 ./install.sh 安装 chaosblade-operator 和 BookDemo示例应用
-2. 使用 ./space-capsule case1 创建第一个故障场景
-3. 使用 ./space-capsule undo case1 还原第一个故障场景
+2. 使用 ./install.sh 安装 chaosblade-operator 和 BookDemo示例应用
+3. 使用 ./space-capsule case1 创建第一个故障场景
+4. 使用 ./space-capsule undo case1 还原第一个故障场景
 
 ## 预构建缺陷场景和原因
 
@@ -39,7 +39,11 @@ Kindling 是一款基于标准化错误定界和定位理念设计的开源监�
 | 13  |死锁| 请求超时/响应慢 | 程序缺陷 |
 | 14  |未捕获异常导致程序致命终止| 请求异常返回/建立连接失败 | 程序缺陷 |
 
-## 示例应用正常流量拓扑
+### 示例应用说明
+
+示例应用是一个基于SpringBoot完成的演示程序，用于模拟正常状态下的用户服务。
+
+#### 示例应用整体调用拓扑
 
 ```mermaid
 graph LR;
@@ -47,10 +51,33 @@ graph LR;
     Gateway-->Bop;
     Bop-->Coreservice;
     Bop-->Cronservice;
-    Coreservice-->Dataservice;
     Coreservice-->Riskservice;
     Riskservice-->Dataservice;
     Cronservice-->Dataservice;
+    Dataservice-->Rocketmq;
+```
+
+#### 示例应用业务调用链-1
+```mermaid
+graph LR;
+    Ng-->Gateway;
+    Gateway-->Bop;
+    Bop-->Cronservice;
+    Cronservice-->Dataservice;
+    Dataservice-->Rocketmq;
+```
+
+#### 示例应用业务调用链-2
+
+```mermaid
+graph LR;
+    Ng-->Gateway;
+    Gateway-->Bop;
+    Bop-->Cronservice;
+    Cronservice-->Bop;
+    Bop-->Coreservice;
+    Coreservice-->Riskservice;
+    Riskservice-->Dataservice;
     Dataservice-->Rocketmq;
 ```
 
