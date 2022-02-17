@@ -14,7 +14,7 @@ Kindling 是一款基于标准化错误定界和定位理念设计的开源监�
 
 我们期望Kindling项目能够尽可能地覆盖用户在云上的各种异常场景，欢迎任何有兴趣的开发者参与丰富我们未设想到的缺陷场景，又或是对其他监控工具进行错误检测和定位测，来帮助所有的eBPF监控工具共同进步。
 
-## How to start
+## How to start on K8s
 
 2. 使用 ./install.sh 安装 chaosblade-operator 和 BookDemo示例应用
 3. 使用 ./space-capsule case1 创建第一个故障场景
