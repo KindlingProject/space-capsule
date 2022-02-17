@@ -8,7 +8,7 @@ from spacecapsule.k8s import prepare_api, executor_command_inside_namespaced_pod
 
 # case1:node network delay
 @click.command()
-@click.option('--node-node', 'node_name')
+@click.option('--node-name', 'node_name')
 @click.option('--interface', 'interface')
 @click.option('--time', 'time', default=3000)
 @click.option('--offset', 'offset', default=100)
@@ -28,13 +28,20 @@ def node_network_delay(node_name, interface, time, offset, remote_port, local_po
         node_ip = pod.status.host_ip
         node_name = pod.spec.node_name
         print("select node_name:", node_name)
+    else:
+        node_list = api_instance.list_node()
+        node_ip = select_node_ip(node_list.items, node_name)
+        if node_ip is None:
+            print("illegal node_name:not find node_ip", node_name)
+            return
+
     if interface is None:
         # Choose a interface
         commands = [
             '/bin/sh',
             '-c',
             'ifconfig | grep -B 1 {}'.format(node_ip) + '| awk \'NR==1{print $1}\'',
-            ]
+        ]
 
         chaosblade_pod_list = api_instance.list_namespaced_pod('chaosblade')
         for chaosblade_pod in chaosblade_pod_list.items:
@@ -114,4 +121,14 @@ def pod_ready(pod):
         if condition.type == 'Ready' and condition.status == 'True':
             return True
     return False
+
+
+def select_node_ip(nodes, input_node_name):
+    for node in nodes:
+        if input_node_name == node.metadata.name:
+            for addr in node.status.addresses:
+                if addr.type == 'InternalIP':
+                    return addr.address
+
+
 
