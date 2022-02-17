@@ -1,6 +1,8 @@
 from spacecapsule.history import store_experiment, defects_info, rollback_command
 from subprocess import Popen, PIPE
 
+from spacecapsule.k8s import prepare_api
+
 
 def bash_executor(create_script, create_template, create_rollback_args, rollback_template_file, args):
     # TODO 部分参数需要executor选择
@@ -14,5 +16,7 @@ def bash_executor(create_script, create_template, create_rollback_args, rollback
 
 
 def k8s_executor(k8s_instance, selectors, command):
+
+
 
     print('TODO')

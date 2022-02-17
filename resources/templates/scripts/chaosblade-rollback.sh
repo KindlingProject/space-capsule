@@ -1,1 +1,0 @@
-blade destroy {{UID}}

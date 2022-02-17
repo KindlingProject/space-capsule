@@ -60,3 +60,7 @@ def resource_limit(args):
     template = template_env.get_template(template_file_name)
     command = template.render(args)
     return command
+
+
+def chaosblade_prepare(process_name, pid):
+    print('TODO')

@@ -1,0 +1,660 @@
+# namespace
+---
+
+
+# service
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bop-svc
+  namespace: practice
+spec:
+  ports:
+  - name: port
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: bop
+  sessionAffinity: None
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: config-svc
+  namespace: practice
+spec:
+  ports:
+  - name: port
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: configservice
+  sessionAffinity: None
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: core-svc
+  namespace: practice
+spec:
+  ports:
+  - name: port
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: coreservice
+  sessionAffinity: None
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cron-svc
+  namespace: practice
+spec:
+  ports:
+  - name: myport
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: cronservice
+  sessionAffinity: None
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: data-svc
+  namespace: practice
+spec:
+  ports:
+  - name: port
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: dataservice
+  sessionAffinity: None
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: etcs-svc
+  namespace: practice
+spec:
+  ports:
+  - name: port
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: etcs
+  sessionAffinity: None
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gateway-svc
+  namespace: practice
+spec:
+  ports:
+  - name: port
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: gateway
+  sessionAffinity: None
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ng-svc
+  namespace: practice
+spec:
+  ports:
+  - name: port
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: ng
+  sessionAffinity: None
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: risk-svc
+  namespace: practice
+spec:
+  ports:
+  - name: port
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: riskservice
+  sessionAffinity: None
+  type: ClusterIP
+
+# workload
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bop
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: bop
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: bop
+    spec:
+      containers:
+      - image: 10.1.11.205/practice/bookdemo:v0.1
+        imagePullPolicy: Always
+        name: bookdemo
+        ports:
+        - containerPort: 8080
+          name: 8080tcp2
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 800m
+            memory: 2000Mi
+          requests:
+            cpu: 800m
+            memory: 800Mi
+        securityContext:
+          allowPrivilegeEscalation: true
+          privileged: true
+          readOnlyRootFilesystem: false
+          runAsNonRoot: false
+        stdin: true
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        tty: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: configservice
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: configservice
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        cattle.io/timestamp: "2022-02-10T09:29:33Z"
+        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
+      creationTimestamp: null
+      labels:
+        app: configservice
+    spec:
+      containers:
+      - image: 10.1.11.205/practice/bookdemo:v0.1
+        imagePullPolicy: Always
+        name: bookdemo
+        ports:
+        - containerPort: 8080
+          name: 8080tcp2
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 800m
+            memory: 2000Mi
+          requests:
+            cpu: 800m
+            memory: 800Mi
+        securityContext:
+          allowPrivilegeEscalation: true
+          privileged: true
+          readOnlyRootFilesystem: false
+          runAsNonRoot: false
+        stdin: true
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        tty: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coreservice
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: coreservice
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        cattle.io/timestamp: "2022-02-10T09:29:33Z"
+        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
+      creationTimestamp: null
+      labels:
+        app: coreservice
+    spec:
+      containers:
+      - image: 10.1.11.205/practice/bookdemo:v0.1
+        imagePullPolicy: Always
+        name: bookdemo
+        ports:
+        - containerPort: 8080
+          name: 8080tcp2
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 800m
+            memory: 2000Mi
+          requests:
+            cpu: 800m
+            memory: 800Mi
+        securityContext:
+          allowPrivilegeEscalation: true
+          privileged: true
+          readOnlyRootFilesystem: false
+          runAsNonRoot: false
+        stdin: true
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        tty: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cronservice
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: cronservice
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        cattle.io/timestamp: "2022-02-10T09:29:33Z"
+        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
+      creationTimestamp: null
+      labels:
+        app: cronservice
+    spec:
+      containers:
+      - image: 10.1.11.205/practice/bookdemo:v0.1
+        imagePullPolicy: Always
+        name: bookdemo
+        ports:
+        - containerPort: 8080
+          name: 8080tcp2
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 800m
+            memory: 2000Mi
+          requests:
+            cpu: 800m
+            memory: 800Mi
+        securityContext:
+          allowPrivilegeEscalation: true
+          privileged: true
+          readOnlyRootFilesystem: false
+          runAsNonRoot: false
+        stdin: true
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        tty: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dataservice
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: dataservice
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        cattle.io/timestamp: "2022-02-10T09:29:33Z"
+        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
+      creationTimestamp: null
+      labels:
+        app: dataservice
+    spec:
+      containers:
+      - image: 10.1.11.205/practice/bookdemo:v0.1
+        imagePullPolicy: Always
+        name: bookdemo
+        ports:
+        - containerPort: 8080
+          name: 8080tcp2
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 800m
+            memory: 2000Mi
+          requests:
+            cpu: 800m
+            memory: 800Mi
+        securityContext:
+          allowPrivilegeEscalation: true
+          privileged: true
+          readOnlyRootFilesystem: false
+          runAsNonRoot: false
+        stdin: true
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        tty: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: etcs
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: etcs
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        cattle.io/timestamp: "2022-02-10T09:29:33Z"
+        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
+      creationTimestamp: null
+      labels:
+        app: etcs
+    spec:
+      containers:
+      - image: 10.1.11.205/practice/bookdemo:v0.1
+        imagePullPolicy: Always
+        name: bookdemo
+        ports:
+        - containerPort: 8080
+          name: 8080tcp2
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 800m
+            memory: 2000Mi
+          requests:
+            cpu: 800m
+            memory: 800Mi
+        securityContext:
+          allowPrivilegeEscalation: true
+          privileged: true
+          readOnlyRootFilesystem: false
+          runAsNonRoot: false
+        stdin: true
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        tty: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gateway
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: gateway
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        cattle.io/timestamp: "2022-02-10T09:29:33Z"
+        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
+      creationTimestamp: null
+      labels:
+        app: gateway
+    spec:
+      containers:
+      - image: 10.1.11.205/practice/bookdemo:v0.1
+        imagePullPolicy: Always
+        name: bookdemo
+        ports:
+        - containerPort: 8080
+          name: 8080tcp2
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 800m
+            memory: 2000Mi
+          requests:
+            cpu: 800m
+            memory: 800Mi
+        securityContext:
+          allowPrivilegeEscalation: true
+          privileged: true
+          readOnlyRootFilesystem: false
+          runAsNonRoot: false
+        stdin: true
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        tty: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ng
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: ng
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        cattle.io/timestamp: "2022-02-10T09:29:33Z"
+        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
+      creationTimestamp: null
+      labels:
+        app: ng
+    spec:
+      containers:
+      - image: 10.1.11.205/practice/bookdemo:v0.1
+        imagePullPolicy: Always
+        name: bookdemo
+        ports:
+        - containerPort: 8080
+          name: 8080tcp2
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 800m
+            memory: 2000Mi
+          requests:
+            cpu: 800m
+            memory: 800Mi
+        securityContext:
+          allowPrivilegeEscalation: true
+          privileged: true
+          readOnlyRootFilesystem: false
+          runAsNonRoot: false
+        stdin: true
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        tty: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: riskservice
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: riskservice
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        cattle.io/timestamp: "2022-02-10T09:29:33Z"
+        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
+      creationTimestamp: null
+      labels:
+        app: riskservice
+    spec:
+      containers:
+      - image: 10.1.11.205/practice/bookdemo:v0.1
+        imagePullPolicy: Always
+        name: bookdemo
+        ports:
+        - containerPort: 8080
+          name: 8080tcp2
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 800m
+            memory: 2000Mi
+          requests:
+            cpu: 800m
+            memory: 800Mi
+        securityContext:
+          allowPrivilegeEscalation: true
+          privileged: true
+          readOnlyRootFilesystem: false
+          runAsNonRoot: false
+        stdin: true
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        tty: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+
