@@ -1,6 +1,6 @@
 import click
 
-from resources.scenes.service_loss import case3
+from resources.scenes.service_loss import case3, case4
 from resources.scenes.service_slow import case2, case1
 from spacecapsule.history import list_experiment, show_experiment, undo_experiment
 
@@ -38,5 +38,6 @@ cli.add_command(undo)
 cli.add_command(case1)
 cli.add_command(case2)
 cli.add_command(case3)
+cli.add_command(case4)
 if __name__ == '__main__':
     cli()
