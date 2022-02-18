@@ -84,27 +84,17 @@ def delay(scope, interface, time, experiment_name, destination_ip, remote_port, 
                   args)
 
 
-@click.command()
-@click.argument('scope')
-@click.argument('interface')
-@click.argument('percent')
-@click.argument('experiment-name')
-@click.option('-dip', '--destination-ip', 'destination_ip')
-@click.option('-rport', '--remote-port', 'remote-port')
-@click.option('-lport', '--local-port', 'local_port')
-@click.option('--offset', 'offset')
-@click.option('--timeout', 'timeout')
-@click.option('--exclude-ip', 'exclude_ip')
-@click.option('--exclude-port', 'exclude_port')
-@click.option('--labels', 'labels')
-@click.option('--namespace', 'namespace')
-def loss(scope, interface, percent, experiment_name, destination_ip, remote_port, local_port, offset, timeout,
-         exclude_ip, exclude_port, labels, namespace):
+def loss(scope, interface, percent, experiment_name, destination_ip, remote_port, local_port, timeout,
+         exclude_ip, exclude_port, labels, namespace, node_name, desc):
     args = locals()
-    args['desc'] = 'package loss'
+    args['desc'] = 'package loss' + desc
     args['action'] = 'loss'
     args['target'] = 'network'
     args['matchers'] = [
+        {
+            'name': 'names',
+            'value': node_name
+        },
         {
             'name': 'interface',
             'value': interface
@@ -124,10 +114,6 @@ def loss(scope, interface, percent, experiment_name, destination_ip, remote_port
         {
             'name': 'local-port',
             'value': local_port
-        },
-        {
-            'name': 'offset',
-            'value': offset
         },
         {
             'name': 'timeout',
