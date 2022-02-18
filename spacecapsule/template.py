@@ -48,6 +48,14 @@ def chaosblade_resource_script(command_script, args):
     return script
 
 
+def chaosblade_prepare_script(command_script, args):
+    template_file_name = 'chaosbladeJvm.sh'
+    template = script_env.get_template(template_file_name)
+    args['command'] = command_script(args)
+    script = template.render(args)
+    return script
+
+
 def chaosblade_resource(args):
     template_file_name = 'chaosbladeResource.yaml'
     template = template_env.get_template(template_file_name)
@@ -62,5 +70,22 @@ def resource_limit(args):
     return command
 
 
-def chaosblade_prepare(process_name, pid):
-    print('TODO')
+def chaosblade_prepare(args):
+    template_file_name = 'blade_prepare.sh'
+    template = template_env.get_template(template_file_name)
+    command = template.render(args)
+    return command
+
+
+def chaosblade_inject(args):
+    template_file_name = 'blade_inject.sh'
+    template = template_env.get_template(template_file_name)
+    command = template.render(args)
+    return command
+
+
+def chaosblade_jvm_delay(args):
+    template_file_name = 'blade_delay.sh'
+    template = template_env.get_template(template_file_name)
+    command = template.render(args)
+    return command

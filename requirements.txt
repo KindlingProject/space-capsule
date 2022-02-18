@@ -2,3 +2,5 @@ setuptools~=60.8.1
 Jinja2~=3.0.3
 click~=8.0.3
 jsonpath~=0.82
+spacecapsule~=0.1.0
+kubernetes~=22.6.0

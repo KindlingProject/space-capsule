@@ -23,16 +23,6 @@ from spacecapsule.executor import bash_executor
 from spacecapsule.template import chaosblade_resource, chaosblade_resource_script
 
 
-@click.command()
-@click.argument('scope')
-@click.argument('cpu-count')
-@click.argument('cpu-percent')
-@click.argument('experiment-name')
-@click.option('--timeout', 'timeout')
-@click.option('--labels', 'labels')
-@click.option('--namespace', 'namespace')
-@click.option('--names', 'names')
-@click.option('--cpu-list','cpu_list')
 def cpu(scope, cpu_count, cpu_percent, experiment_name, timeout, labels, namespace, names,cpu_list):
     args = locals()
     args['action'] = 'fullload'

@@ -1,30 +1,52 @@
 # case12
-from spacecapsule.k8s import copy_tar_file_to_namespaced_pod, prepare_api, executor_command_inside_namespaced_pod
-from spacecapsule.template import resource_path
+import json
+
+import jsonpath
+
+from resources.scenes.service_slow import select_pod_from_ready
+from spacecapsule.executor import inject_code, delay_code
+from spacecapsule.k8s import prepare_api
 
 
-def case12():
-    print('TODO')
+def case12(namespace, pod, time, offset, kube_config):
+    slow_code(namespace, pod, time, offset, kube_config)
 
 
-def slow_code(namespace, pod, claz, method, inject_code):
-    print('TODO')
+def case14(namespace, pod, kube_config):
+    unexpected_err(namespace, pod, kube_config)
 
 
-def runtime_err():
-    print('TODO')
+def case15(namespace, pod, kube_config):
+    slow_sql(namespace, pod, kube_config)
 
 
-def dead_lock():
-    print('TODO')
+def slow_code(namespace, pod, time, offset, kube_config):
+    delay_code(namespace, pod, 'java', None, 'com.imooc.appoint.service.Impl.PracticeServiceImpl', 'mysqlSuccess', time,
+               offset, kube_config)
 
 
-def inject_code(namespace, pod, process_name, pid, claz, method, code_src, kube_config):
+def slow_sql(namespace, pod, kube_config):
     api_instance = prepare_api(kube_config)
-    # Check chaosblade is existed or not
-    copy_tar_file_to_namespaced_pod(api_instance, namespace, pod, resource_path('./resources/chaosblade'))
-    # Check chaosblade is prepared or not
-    print('check prepare')
-    executor_command_inside_namespaced_pod()
-    # Ask k8s_executor to inject target code
-    # Save the UID which blade create
+    if pod is None:
+        pod_list = api_instance.list_namespaced_pod(namespace)
+        pod_info = select_pod_from_ready(pod_list.items, None, None)
+    inject_code(namespace, pod_info.metadata.name, 'java', None, 'com.imooc.appoint.service.Impl.PracticeServiceImpl',
+                'mysqlSuccess', '/opt/chaosblade/script/SlowSqlService.java', 'slowSql')
+
+
+def unexpected_err(namespace, pod, kube_config):
+    api_instance = prepare_api(kube_config)
+    if pod is None:
+        pod_list = api_instance.list_namespaced_pod(namespace)
+        pod_info = select_pod_from_ready(pod_list.items, None, None)
+    inject_code(namespace, pod_info.metadata.name, 'java', None, 'com.imooc.appoint.service.Impl.PracticeServiceImpl',
+                'mysqlSuccess', '/opt/chaosblade/script/BusinessCodeService.java', 'specifyReturnOb')
+
+
+def dead_lock(namespace, pod, kube_config):
+    api_instance = prepare_api(kube_config)
+    if pod is None:
+        pod_list = api_instance.list_namespaced_pod(namespace)
+        pod_info = select_pod_from_ready(pod_list.items, None, None)
+    inject_code(namespace, pod_info.metadata.name, 'java', None, 'com.imooc.appoint.service.Impl.PracticeServiceImpl',
+                'mysqlSuccess', '/opt/chaosblade/script/DeadLockService.java', 'Deadlock')
