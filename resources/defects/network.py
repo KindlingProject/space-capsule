@@ -87,7 +87,7 @@ def delay(scope, interface, time, experiment_name, destination_ip, remote_port, 
 def loss(scope, interface, percent, experiment_name, destination_ip, remote_port, local_port, timeout,
          exclude_ip, exclude_port, labels, namespace, node_name, desc):
     args = locals()
-    args['desc'] = 'package loss' + desc
+    args['desc'] = 'package loss:' + desc
     args['action'] = 'loss'
     args['target'] = 'network'
     args['matchers'] = [
