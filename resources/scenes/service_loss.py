@@ -14,7 +14,7 @@ from spacecapsule.k8s import prepare_api, executor_command_inside_namespaced_pod
 @click.option('--timeout', 'timeout', default=10000)
 @click.option('--kube-config', 'kube_config', default="~/.kube/config")
 def case3(node_name, interface, percent, timeout, kube_config):
-    node_network_loss(node_name, interface, percent,  None, None, timeout, kube_config)
+    node_network_loss(node_name, interface, percent, None, None, timeout, kube_config)
 
 
 def node_network_loss(node_name, interface, percent, remote_port, local_port, timeout, kube_config):
@@ -59,6 +59,55 @@ def node_network_loss(node_name, interface, percent, remote_port, local_port, ti
          .format(node_name, percent, timeout))
 
     print("node network loss injected done！")
+
+
+# case4 only calico now
+@click.command()
+@click.option('--namespace', 'namespace', default='practice')
+@click.option('--network-plugin', 'network_plugin', default='calico')
+@click.option('--time', 'time', default=3000)
+@click.option('--percent', 'percent', default=80)
+@click.option('--timeout', 'timeout', default=10000)
+@click.option('--kube-config', 'kube_config', default="~/.kube/config")
+def case4(namespace, network_plugin, time, percent, timeout, kube_config):
+    pod_network_loss(namespace, network_plugin, time, percent, timeout, kube_config)
+
+
+def pod_network_loss(namespace, network_plugin, time, percent, timeout, kube_config):
+    # Choose a pod from target namespace
+    api_instance = prepare_api(kube_config)
+    pod_list = api_instance.list_namespaced_pod(namespace)
+
+    pod = select_pod_from_ready(pod_list.items)
+    if pod is None:
+        print("not find ready pod in namespace:", namespace)
+        return
+    pod_name = pod.metadata.name
+    host_ip = pod.status.host_ip
+    pod_ip = pod.status.pod_ip
+    node_name = pod.spec.node_name
+    calico_interface = ""
+
+    commands = [
+        '/bin/sh',
+        '-c',
+        'ip route | grep {} '.format(pod_ip) + '| awk \'{print $3}\'',
+    ]
+
+    pod_list = api_instance.list_namespaced_pod('chaosblade')
+    for pod in pod_list.items:
+        if pod.status.host_ip == host_ip:
+            stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade', pod.metadata.name,
+                                                                    commands)
+            calico_interface = stdout
+            break
+    print("interface:", calico_interface, "node_name:", node_name, "pod_name:", pod_name, "percent:", percent)
+    # Choose the cali interface from target Node
+    loss('node', calico_interface, percent, 'case4', None, '8080', None, timeout, None,
+         '22,10250', None, None, node_name,
+         'Insert a network loss into pod {}, percent {}, timeout {}'.format(pod_name, percent, timeout))
+
+    print("pod network loss injected done！")
 
 
 def select_pod_from_ready(pods):
