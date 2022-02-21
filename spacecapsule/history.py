@@ -41,9 +41,11 @@ def store_experiment(info, rollback_cmd, cmd_out, cmd_err):
     with open(rollback_path, 'w') as info:
         info.write(rollback_cmd)
     with open(os.path.join(defect_path, 'command.log'), 'a') as out:
-        out.write(cmd_out)
+        if cmd_out is not None:
+            out.write(cmd_out)
     with open(os.path.join(defect_path, 'command.err'), 'a') as err:
-        err.write(cmd_err)
+        if cmd_err is not None:
+            err.write(cmd_err)
 
 
 def list_experiment():

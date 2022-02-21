@@ -1,0 +1,1 @@
+create jvm script --script-file {{ script_file }} --script-name {{ script_name }}

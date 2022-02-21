@@ -75,7 +75,7 @@ def delay(scope, interface, time, experiment_name, destination_ip, remote_port, 
             'value': namespace
         },
         {
-            'name':'names',
+            'name': 'names',
             'value': names,
         }
     ]
@@ -87,7 +87,7 @@ def delay(scope, interface, time, experiment_name, destination_ip, remote_port, 
 def loss(scope, interface, percent, experiment_name, destination_ip, remote_port, local_port, timeout,
          exclude_ip, exclude_port, labels, namespace, node_name, desc):
     args = locals()
-    args['desc'] = 'package loss' + desc
+    args['desc'] = 'package loss:' + desc
     args['action'] = 'loss'
     args['target'] = 'network'
     args['matchers'] = [
@@ -139,14 +139,6 @@ def loss(scope, interface, percent, experiment_name, destination_ip, remote_port
     # defects_info(args)
     bash_executor(chaosblade_resource_script, chaosblade_resource, rollback_args, 'chaosbladeResource-rollback.sh',
                   args)
-
-def to_chaos_args(args):
-    chaos_args = []
-    chaos_args['scope'] = args['scope']
-    chaos_args['desc'] = args['desc']
-    chaos_args['action'] = args['action']
-    chaos_args['target'] = args['target']
-    return args
 
 
 def rollback_args(args):

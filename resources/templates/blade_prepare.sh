@@ -1,1 +1,1 @@
-prepare jvm {% if process %} --process {{ process }} {% endif %} {% if pid %} --pid {{ pid }} {% endif %}
+prepare jvm

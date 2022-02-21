@@ -1,9 +1,10 @@
 import tarfile
+
 from tempfile import TemporaryFile
 
 from kubernetes import config
 from kubernetes.client import Configuration
-from kubernetes.client.api import core_v1_api
+from kubernetes.client.api import core_v1_api, apps_v1_api
 from kubernetes.stream import stream
 
 from spacecapsule.template import resource_path
@@ -19,6 +20,18 @@ def prepare_api(configfile):
     Configuration.set_default(c)
     core_v1 = core_v1_api.CoreV1Api()
     return core_v1
+
+
+def prepare_app_api(configfile):
+    config.load_kube_config(configfile)
+    try:
+        c = Configuration().get_default_copy()
+    except AttributeError:
+        c = Configuration()
+        c.assert_hostname = False
+    Configuration.set_default(c)
+    app_v1 = apps_v1_api.AppsV1Api()
+    return app_v1
 
 
 def copy_tar_file_to_namespaced_pod(api_instance, namespace, name, src_path, dst_path):
@@ -44,7 +57,7 @@ def copy_tar_file_to_namespaced_pod(api_instance, namespace, name, src_path, dst
                 print('STDERR: {0}'.format(api_response.read_stderr()))
             if commands:
                 c = commands.pop(0)
-                api_response.write_stdin(c.decode())
+                api_response.write_stdin(c)
             else:
                 break
         api_response.close()
@@ -58,8 +71,8 @@ def executor_command_inside_namespaced_pod(api_instance, namespace, name, comman
                           stdout=True, tty=False,
                           _preload_content=False
                           )
-    stdout = api_response.readline_stdout(timeout=3)
-    stderr = api_response.readline_stderr(timeout=3)
+    stdout = api_response.readline_stdout(timeout=15)
+    stderr = api_response.readline_stderr(timeout=15)
     api_response.close()
     return stdout, stderr
 
