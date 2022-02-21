@@ -1,1 +1,0 @@
-kubectl create -f - {{blade_resources}}

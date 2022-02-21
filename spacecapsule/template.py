@@ -53,7 +53,12 @@ def chaosblade_prepare_script(command_script, args):
     template = script_env.get_template(template_file_name)
     args['command'] = command_script(args)
     script = template.render(args)
-    return script
+    commands = [
+        "bash",
+        "-c",
+        script
+    ]
+    return commands
 
 
 def chaosblade_resource(args):
@@ -63,8 +68,22 @@ def chaosblade_resource(args):
     return resource
 
 
+def k8s_resource(args):
+    template_file_name = 'k8sResource.yaml'
+    template = template_env.get_template(template_file_name)
+    resource = template.render(args)
+    return resource
+
+
 def resource_limit(args):
     template_file_name = 'resource.sh'
+    template = template_env.get_template(template_file_name)
+    command = template.render(args)
+    return command
+
+
+def namespace_quota(args):
+    template_file_name = 'namespace_quota.yaml'
     template = template_env.get_template(template_file_name)
     command = template.render(args)
     return command

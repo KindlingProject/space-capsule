@@ -44,10 +44,10 @@ def node_network_delay(node_name, interface, time, offset, remote_port, local_po
             'ifconfig | grep -B 1 {}'.format(node_ip) + '| awk \'NR==1{print $1}\'',
         ]
 
-        chaosblade_pod_list = api_instance.list_namespaced_pod('chaosblade')
+        chaosblade_pod_list = api_instance.list_namespaced_pod('chaosblade-exec')
         for chaosblade_pod in chaosblade_pod_list.items:
             if chaosblade_pod.spec.node_name == node_name:
-                stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade',
+                stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade-exec',
                                                                         chaosblade_pod.metadata.name,
                                                                         commands)
                 interface = stdout
@@ -90,10 +90,10 @@ def pod_network_delay(namespace, network_plugin, time, offset, timeout, kube_con
         'ip route | grep {} '.format(pod_ip) + '| awk \'{print $3}\'',
     ]
 
-    pod_list = api_instance.list_namespaced_pod('chaosblade')
+    pod_list = api_instance.list_namespaced_pod('chaosblade-exec')
     for pod in pod_list.items:
         if pod.status.host_ip == host_ip:
-            stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade', pod.metadata.name,
+            stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade-exec', pod.metadata.name,
                                                                     commands)
             calico_interface = stdout
             break
