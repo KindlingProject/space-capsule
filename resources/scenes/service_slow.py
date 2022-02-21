@@ -1,6 +1,8 @@
+import json
 import random
 
 import click
+import jsonpath
 
 from resources.defects.network import delay
 from spacecapsule.k8s import prepare_api, executor_command_inside_namespaced_pod
@@ -19,12 +21,11 @@ def case1(node_name, interface, time, offset, timeout, kube_config):
 
 
 def node_network_delay(node_name, interface, time, offset, remote_port, local_port, timeout, kube_config):
-    global api_instance, node_ip
     api_instance = prepare_api(kube_config)
     if node_name is None:
         # Choose a node
         pod_list = api_instance.list_namespaced_pod("practice")
-        pod = select_pod_from_ready(pod_list.items)
+        pod = select_pod_from_ready(pod_list.items, None, None)
         node_ip = pod.status.host_ip
         node_name = pod.spec.node_name
         print("select node_name:", node_name)
@@ -43,10 +44,10 @@ def node_network_delay(node_name, interface, time, offset, remote_port, local_po
             'ifconfig | grep -B 1 {}'.format(node_ip) + '| awk \'NR==1{print $1}\'',
         ]
 
-        chaosblade_pod_list = api_instance.list_namespaced_pod('chaosblade')
+        chaosblade_pod_list = api_instance.list_namespaced_pod('chaosblade-exec')
         for chaosblade_pod in chaosblade_pod_list.items:
             if chaosblade_pod.spec.node_name == node_name:
-                stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade',
+                stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade-exec',
                                                                         chaosblade_pod.metadata.name,
                                                                         commands)
                 interface = stdout
@@ -76,7 +77,7 @@ def pod_network_delay(namespace, network_plugin, time, offset, timeout, kube_con
     api_instance = prepare_api(kube_config)
     pod_list = api_instance.list_namespaced_pod(namespace)
 
-    pod = select_pod_from_ready(pod_list.items)
+    pod = select_pod_from_ready(pod_list.items, None, None)
     pod_name = pod.metadata.name
     host_ip = pod.status.host_ip
     pod_ip = pod.status.pod_ip
@@ -89,10 +90,10 @@ def pod_network_delay(namespace, network_plugin, time, offset, timeout, kube_con
         'ip route | grep {} '.format(pod_ip) + '| awk \'{print $3}\'',
     ]
 
-    pod_list = api_instance.list_namespaced_pod('chaosblade')
+    pod_list = api_instance.list_namespaced_pod('chaosblade-exec')
     for pod in pod_list.items:
         if pod.status.host_ip == host_ip:
-            stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade', pod.metadata.name,
+            stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade-exec', pod.metadata.name,
                                                                     commands)
             calico_interface = stdout
             break
@@ -104,11 +105,22 @@ def pod_network_delay(namespace, network_plugin, time, offset, timeout, kube_con
                                                                                       timeout))
 
 
-def select_pod_from_ready(pods):
+def field_selector(pod, fields):
+    return jsonpath.jsonpath(pod, fields.key) == fields.value
+
+
+def select_pod_from_ready(pods, selector, selector_args):
     ready = []
     for pod in pods:
-        if pod_ready(pod):
+        if selector is None:
+            if pod_ready(pod):
+                ready.append(pod)
+            else:
+                continue
+        elif selector(pod, selector_args):
             ready.append(pod)
+        else:
+            continue
     if len(ready) == 0:
         print('缺少合适的Pod')
         return None
@@ -129,6 +141,3 @@ def select_node_ip(nodes, input_node_name):
             for addr in node.status.addresses:
                 if addr.type == 'InternalIP':
                     return addr.address
-
-
-

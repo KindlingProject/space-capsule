@@ -33,7 +33,7 @@ from spacecapsule.template import chaosblade_resource, chaosblade_resource_scrip
 @click.option('--timeout', 'timeout')
 @click.option('--labels', 'labels')
 @click.option('--names', 'names')
-def diskfill(scope,experiment_name, path, size, reserve, percent, timeout, labels, names):
+def diskfill(scope, experiment_name, path, size, reserve, percent, timeout, labels, names):
     args = locals()
     args['action'] = 'fill'
     args['target'] = 'disk'
@@ -70,7 +70,8 @@ def diskfill(scope,experiment_name, path, size, reserve, percent, timeout, label
 
     ]
     # defects_info(args)
-    bash_executor(chaosblade_resource_script, chaosblade_resource, rollback_args, 'chaosbladeResource-rollback.sh', args)
+    bash_executor(chaosblade_resource_script, chaosblade_resource, rollback_args, 'chaosbladeResource-rollback.sh',
+                  args)
 
 
 def rollback_args(args):

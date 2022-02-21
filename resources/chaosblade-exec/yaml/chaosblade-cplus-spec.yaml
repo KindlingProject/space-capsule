@@ -1,0 +1,202 @@
+version: v1
+kind: plugin
+items:
+- target: cplus
+  shortDesc: C++ chaos experiments
+  longDesc: C++ chaos experiments contain code line delayed, variable modified and
+    err returned
+  actions:
+  - action: return
+    shortDesc: error returned
+    longDesc: error returned
+    flags:
+    - name: returnValue
+      desc: Value returned. If you want return null, set --returnValue null
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: breakLine
+      desc: Injection line in source code
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: fileLocateAndName
+      desc: Startup file location and name
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: initParams
+      desc: Initialization parameters for program startup (such as port number)
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    - name: forkMode
+      desc: Fault injection into child or parent processes (sub process:child ; main
+        process:parent)
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: processName
+      desc: Application process name
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: libLoad
+      desc: If the class library needs to be loaded when the program starts, input
+        the class library address
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    - name: timeout
+      desc: set timeout for experiment
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    - name: async
+      desc: whether to create asynchronously, default is false
+      noArgs: true
+      required: false
+      requiredWhenDestroyed: false
+    - name: endpoint
+      desc: the create result reporting address. It takes effect only when the async
+        value is true and the value is not empty
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    example: ""
+  - action: delay
+    shortDesc: Code line delayed
+    longDesc: Code line delayed
+    flags:
+    - name: delayDuration
+      desc: delay time, unit is second
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: breakLine
+      desc: Injection line in source code
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: fileLocateAndName
+      desc: Startup file location and name
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: initParams
+      desc: Initialization parameters for program startup (such as port number)
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    - name: forkMode
+      desc: Fault injection into child or parent processes (sub process:child ; main
+        process:parent)
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: processName
+      desc: Application process name
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: libLoad
+      desc: If the class library needs to be loaded when the program starts, input
+        the class library address
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    - name: timeout
+      desc: set timeout for experiment
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    - name: async
+      desc: whether to create asynchronously, default is false
+      noArgs: true
+      required: false
+      requiredWhenDestroyed: false
+    - name: endpoint
+      desc: the create result reporting address. It takes effect only when the async
+        value is true and the value is not empty
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    example: ""
+  - action: modify
+    shortDesc: Modify value of the variable in source code when program running
+    longDesc: Modify value of the variable in source code when program running
+    flags:
+    - name: variableName
+      desc: The name of the modified variable
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: variableValue
+      desc: The value of the modified variable
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: breakLine
+      desc: Injection line in source code
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: fileLocateAndName
+      desc: Startup file location and name
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: initParams
+      desc: Initialization parameters for program startup (such as port number)
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    - name: forkMode
+      desc: Fault injection into child or parent processes (sub process:child ; main
+        process:parent)
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: processName
+      desc: Application process name
+      noArgs: false
+      required: true
+      requiredWhenDestroyed: false
+    - name: libLoad
+      desc: If the class library needs to be loaded when the program starts, input
+        the class library address
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    - name: timeout
+      desc: set timeout for experiment
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    - name: async
+      desc: whether to create asynchronously, default is false
+      noArgs: true
+      required: false
+      requiredWhenDestroyed: false
+    - name: endpoint
+      desc: the create result reporting address. It takes effect only when the async
+        value is true and the value is not empty
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    example: ""
+  scope: host
+  prepare:
+    type: cplus
+    flags:
+    - name: port
+      desc: server port to be listening
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    - name: ip
+      desc: The ip address bound to the service
+      noArgs: false
+      required: false
+      requiredWhenDestroyed: false
+    required: true

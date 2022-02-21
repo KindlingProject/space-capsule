@@ -42,10 +42,10 @@ def node_network_loss(node_name, interface, percent, remote_port, local_port, ti
             'ifconfig | grep -B 1 {}'.format(node_ip) + '| awk \'NR==1{print $1}\'',
         ]
 
-        chaosblade_pod_list = api_instance.list_namespaced_pod('chaosblade')
+        chaosblade_pod_list = api_instance.list_namespaced_pod('chaosblade-exec')
         for chaosblade_pod in chaosblade_pod_list.items:
             if chaosblade_pod.spec.node_name == node_name:
-                stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade',
+                stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade-exec',
                                                                         chaosblade_pod.metadata.name,
                                                                         commands)
                 interface = stdout

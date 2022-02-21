@@ -1,1 +1,1 @@
-./opt/chaosblade/blade {{ command }}  {% if classname %} --classname {{ classname }} {% endif %}{% if methodname %} --methodname {{ methodname }}{% endif %}{% if after %} --after {% endif %}
+/opt/chaosblade/blade {{ command }} {% if process %} --process {{ process }} {% endif %} {% if pid %} --pid {{ pid }} {% endif %} {% if java_home %} --javaHome {{ java_home }}{% endif %} {% if classname %} --classname {{ classname }} {% endif %}{% if methodname %} --methodname {{ methodname }}{% endif %}{% if after %} --after {% endif %}
