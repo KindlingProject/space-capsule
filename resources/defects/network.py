@@ -141,5 +141,50 @@ def loss(scope, interface, percent, experiment_name, destination_ip, remote_port
                   args)
 
 
+def dns(scope, domain, ip, experiment_name, timeout, labels, namespace, name, desc):
+    args = locals()
+    args['desc'] = 'dns:' + desc
+    args['action'] = 'dns'
+    args['target'] = 'network'
+    args['matchers'] = [
+        {
+            'name': 'names',
+            'value': name
+        },
+        {
+            'name': 'domain',
+            'value': domain
+        },
+        {
+            'name': 'ip',
+            'value': ip
+        },
+        {
+            'name': 'timeout',
+            'value': timeout
+        },
+        {
+            'name': 'labels',
+            'value': labels
+        },
+        {
+            'name': 'namespace',
+            'value': namespace
+        }
+    ]
+    # defects_info(args)
+    bash_executor(chaosblade_resource_script, chaosblade_resource, rollback_args, 'chaosbladeResource-rollback.sh',
+                  args)
+
+
+def to_chaos_args(args):
+    chaos_args = []
+    chaos_args['scope'] = args['scope']
+    chaos_args['desc'] = args['desc']
+    chaos_args['action'] = args['action']
+    chaos_args['target'] = args['target']
+    return args
+
+
 def rollback_args(args):
     return {}

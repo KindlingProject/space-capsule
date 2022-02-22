@@ -24,7 +24,7 @@ def node_network_loss(node_name, interface, percent, remote_port, local_port, ti
         # Choose a node
         pod_list = api_instance.list_namespaced_pod("practice")
         pod = select_pod_from_ready(pod_list.items)
-        node_ip = pod.status.host_ip
+        node_ip = pod .status.host_ip
         node_name = pod.spec.node_name
         print("select node_name:", node_name)
     else:
