@@ -1,7 +1,3 @@
-# namespace
----
-
-
 # service
 ---
 apiVersion: v1
@@ -162,6 +158,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: bop
+  namespace: practice
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -214,6 +211,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: configservice
+  namespace: practice
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -228,10 +226,6 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      annotations:
-        cattle.io/timestamp: "2022-02-10T09:29:33Z"
-        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
-      creationTimestamp: null
       labels:
         app: configservice
     spec:
@@ -270,6 +264,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: coreservice
+  namespace: practice
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -284,10 +279,6 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      annotations:
-        cattle.io/timestamp: "2022-02-10T09:29:33Z"
-        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
-      creationTimestamp: null
       labels:
         app: coreservice
     spec:
@@ -326,6 +317,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cronservice
+  namespace: practice
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -382,6 +374,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dataservice
+  namespace: practice
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -396,10 +389,6 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      annotations:
-        cattle.io/timestamp: "2022-02-10T09:29:33Z"
-        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
-      creationTimestamp: null
       labels:
         app: dataservice
     spec:
@@ -438,6 +427,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: etcs
+  namespace: practice
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -452,10 +442,6 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      annotations:
-        cattle.io/timestamp: "2022-02-10T09:29:33Z"
-        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
-      creationTimestamp: null
       labels:
         app: etcs
     spec:
@@ -494,6 +480,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gateway
+  namespace: practice
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -508,10 +495,6 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      annotations:
-        cattle.io/timestamp: "2022-02-10T09:29:33Z"
-        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
-      creationTimestamp: null
       labels:
         app: gateway
     spec:
@@ -551,6 +534,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ng
+  namespace: practice
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -564,11 +548,6 @@ spec:
       maxUnavailable: 0
     type: RollingUpdate
   template:
-    metadata:
-      annotations:
-        cattle.io/timestamp: "2022-02-10T09:29:33Z"
-        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
-      creationTimestamp: null
       labels:
         app: ng
     spec:
@@ -607,6 +586,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: riskservice
+  namespace: practice
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -621,10 +601,6 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      annotations:
-        cattle.io/timestamp: "2022-02-10T09:29:33Z"
-        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
-      creationTimestamp: null
       labels:
         app: riskservice
     spec:

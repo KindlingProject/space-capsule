@@ -1,6 +1,7 @@
 import json
 
 import jsonpath
+import paramiko
 
 from spacecapsule.history import store_experiment, defects_info, rollback_command
 from subprocess import Popen, PIPE
@@ -84,3 +85,49 @@ def check_chaosblade_exists(api_instance, namespace, pod):
                 "[ -d /opt/chaosblade ] && echo True || echo False"]
     check_msg, check_err = executor_command_inside_namespaced_pod(api_instance, namespace, pod, commands)
     return check_msg, check_err
+
+
+def ssh_executor(ip, user, pwd, command):
+    ssh = paramiko.SSHClient()
+    key = paramiko.AutoAddPolicy()
+    ssh.set_missing_host_key_policy(key)
+    ssh.connect(ip, 22, user, pwd, timeout=5)
+    return ssh.exec_command(command)
+
+
+def chaosblade_ssh_executor(ip, user, pwd, command, experiment_name):
+    args = locals()
+    ssh = paramiko.SSHClient()
+    key = paramiko.AutoAddPolicy()
+    ssh.set_missing_host_key_policy(key)
+    ssh.connect(ip, 22, user, pwd, timeout=5)
+    stdin, stdout, stderr = ssh_executor(ip, user, pwd, command)
+    exec_msg = stdout.readline().replace('\n', '')
+    experiment_uid = jsonpath.jsonpath(json.loads(exec_msg), 'result')
+    args['rollback-command'] = '/opt/chaosblade/blade destroy ' + experiment_uid
+    store_experiment(args, rollback_command('chaosblade-ssh-rollback.sh', args), stdout, stderr)
+
+
+def chaosblade_ssh_jvm_executor(ip, user, pwd, process_name, pid, classname, methodname, script_file,
+                                script_name,
+                                experiment_name):
+    args = locals()
+    ssh = paramiko.SSHClient()
+    key = paramiko.AutoAddPolicy()
+    ssh.set_missing_host_key_policy(key)
+    ssh.connect(ip, 22, user, pwd, timeout=5)
+    prepare_args = {'pid': pid}
+    prepare_command = chaosblade_prepare_script(chaosblade_prepare, prepare_args)
+    stdin, stdout, stderr = ssh_executor(ip, user, pwd, prepare_command)
+    prepare_msg = stdout.readline().replace('\n', '')
+    agent_uid = jsonpath.jsonpath(json.loads(prepare_msg), 'result')
+    inject_command = chaosblade_prepare_script(chaosblade_inject, args)
+    stdin, stdout, stderr = ssh_executor(ip, user, pwd, inject_command)
+    inject_msg = stdout.readline().replace('\n', '')
+    experiment_uid = jsonpath.jsonpath(json.loads(inject_msg), 'result')
+    print('exe', experiment_uid)
+    print('agent', agent_uid)
+    # Save the UID which blade create
+    args.update(agent_uid=agent_uid[0], experiment_uid=experiment_uid)
+    args.update()
+    store_experiment(args, rollback_command('chaosblade-ssh-jvm-rollback.sh', args), inject_msg, stderr)

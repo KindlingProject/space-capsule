@@ -54,7 +54,7 @@ def slow_sql(namespace, pod, kube_config, experiment_name):
         pod_list = api_instance.list_namespaced_pod(namespace)
         pod = select_pod_from_ready(pod_list.items, None, None).metadata.name
     inject_code(namespace, pod, 'java', None, 'com.imooc.appoint.service.Impl.PracticeServiceImpl',
-                'mysqlSuccess', '/opt/chaosblade-exec/script/SlowSqlService.java', 'slowSql', experiment_name)
+                'mysqlSuccess', '/opt/chaosblade/script/SlowSqlService.java', 'slowSql', experiment_name)
 
 
 def unexpected_err(namespace, pod, kube_config, experiment_name):
@@ -63,7 +63,7 @@ def unexpected_err(namespace, pod, kube_config, experiment_name):
         pod_list = api_instance.list_namespaced_pod(namespace)
         pod = select_pod_from_ready(pod_list.items, None, None).metadata.name
     inject_code(namespace, pod, 'java', None, 'com.imooc.appoint.service.Impl.PracticeServiceImpl',
-                'mysqlSuccess', None, '/opt/chaosblade-exec/script/BusinessCodeService.java', 'specifyReturnOb',
+                'mysqlSuccess', None, '/opt/chaosblade/script/BusinessCodeService.java', 'specifyReturnOb',
                 experiment_name)
 
 
@@ -73,4 +73,4 @@ def dead_lock(namespace, pod, kube_config, experiment_name):
         pod_list = api_instance.list_namespaced_pod(namespace)
         pod = select_pod_from_ready(pod_list.items, None, None).metadata.name
     inject_code(namespace, pod, 'java', None, 'com.imooc.appoint.service.Impl.PracticeServiceImpl',
-                'mysqlSuccess', '/opt/chaosblade-exec/script/DeadLockService.java', 'Deadlock', experiment_name)
+                'mysqlSuccess', '/opt/chaosblade/script/DeadLockService.java', 'Deadlock', experiment_name)
