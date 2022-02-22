@@ -1,0 +1,1 @@
+ssh {{ user }}@{{ ip }} "{{rollback_command}}"

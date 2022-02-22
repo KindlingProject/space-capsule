@@ -4,3 +4,4 @@ click~=8.0.3
 jsonpath~=0.82
 spacecapsule~=0.1.0
 kubernetes~=22.6.0
+paramiko~=2.9.2

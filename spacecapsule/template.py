@@ -61,6 +61,14 @@ def chaosblade_prepare_script(command_script, args):
     return commands
 
 
+def chaosblade_prepare_script_vm(command_script, args):
+    template_file_name = 'chaosbladeJvm.sh'
+    template = script_env.get_template(template_file_name)
+    args['command'] = command_script(args)
+    script = template.render(args)
+    return script
+
+
 def chaosblade_resource(args):
     template_file_name = 'chaosbladeResource.yaml'
     template = template_env.get_template(template_file_name)
