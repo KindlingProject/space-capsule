@@ -1,1 +1,1 @@
-ssh {{ user }}@{{ ip }} "{{rollback-command}}"
+ssh {{ user }}@{{ ip }} "{{rollback_command}}"
