@@ -15,9 +15,7 @@ def bash_executor(create_script, create_template, create_rollback_args, rollback
     # TODO 部分参数需要executor选择
     script = create_script(create_template, args)
     process = Popen(script, shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE)
-
     out, err = process.communicate()
-
     args.update(create_rollback_args(args))
     store_experiment(args, rollback_command(rollback_template_file, args), out.decode(), err.decode())
 
@@ -38,7 +36,7 @@ def inject_code(namespace, pod, process_name, pid, classname, methodname, kube_c
     store_experiment(args, rollback_command('chaosbladeJvm-rollback.sh', args), inject_msg, stderr)
 
 
-def delay_code(namespace, pod, process, pid, classname, methodname, time, offset, kube_config):
+def delay_code(namespace, pod, process, pid, classname, methodname, time, offset, kube_config, experiment_name):
     args = locals()
     agent_uid, api_instance, stderr = chaosblade_jvm_prepare(args, kube_config, namespace, pod)
 

@@ -1,8 +1,5 @@
-# case12
-import json
 
 import click
-import jsonpath
 
 from resources.scenes.service_slow import select_pod_from_ready
 from spacecapsule.executor import inject_code, delay_code

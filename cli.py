@@ -2,6 +2,7 @@ import click
 
 from resources.scenes.jvm_inject import case14, case12, case13, case15
 from resources.scenes.resource import case8, case9, case11
+from resources.scenes.service_dns import case6
 from resources.scenes.service_loss import case3, case4
 from resources.scenes.service_slow import case2, case1
 from resources.scenes_instance.cloud_instance import *
@@ -33,15 +34,11 @@ def undo(experiment):
 cli.add_command(history)
 cli.add_command(show)
 cli.add_command(undo)
-
-# cli.add_command(resource)
-# cli.add_command(loss)
-# cli.add_command(cpu)
-# cli.add_command(diskfill)
 cli.add_command(case1)
 cli.add_command(case2)
 cli.add_command(case3)
 cli.add_command(case4)
+cli.add_command(case6)
 cli.add_command(case8)
 cli.add_command(case9)
 cli.add_command(case11)
