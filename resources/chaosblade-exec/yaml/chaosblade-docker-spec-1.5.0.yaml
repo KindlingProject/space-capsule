@@ -42,12 +42,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -56,14 +56,14 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-release
-      desc: The pull path of the chaosblade-exec tar package, for example, --chaosblade-exec-release
-        /opt/chaosblade-exec-0.4.0.tar.gz
+    - name: chaosblade-release
+      desc: The pull path of the chaosblade tar package, for example, --chaosblade-release
+        /opt/chaosblade-0.4.0.tar.gz
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
@@ -154,12 +154,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -168,14 +168,14 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-release
-      desc: The pull path of the chaosblade-exec tar package, for example, --chaosblade-exec-release
-        /opt/chaosblade-exec-0.4.0.tar.gz
+    - name: chaosblade-release
+      desc: The pull path of the chaosblade tar package, for example, --chaosblade-release
+        /opt/chaosblade-0.4.0.tar.gz
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
@@ -249,12 +249,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -263,14 +263,14 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-release
-      desc: The pull path of the chaosblade-exec tar package, for example, --chaosblade-exec-release
-        /opt/chaosblade-exec-0.4.0.tar.gz
+    - name: chaosblade-release
+      desc: The pull path of the chaosblade tar package, for example, --chaosblade-release
+        /opt/chaosblade-0.4.0.tar.gz
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
@@ -355,12 +355,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -369,14 +369,14 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-release
-      desc: The pull path of the chaosblade-exec tar package, for example, --chaosblade-exec-release
-        /opt/chaosblade-exec-0.4.0.tar.gz
+    - name: chaosblade-release
+      desc: The pull path of the chaosblade tar package, for example, --chaosblade-release
+        /opt/chaosblade-0.4.0.tar.gz
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
@@ -468,12 +468,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -482,14 +482,14 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-release
-      desc: The pull path of the chaosblade-exec tar package, for example, --chaosblade-exec-release
-        /opt/chaosblade-exec-0.4.0.tar.gz
+    - name: chaosblade-release
+      desc: The pull path of the chaosblade tar package, for example, --chaosblade-release
+        /opt/chaosblade-0.4.0.tar.gz
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
@@ -552,12 +552,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -566,14 +566,14 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-release
-      desc: The pull path of the chaosblade-exec tar package, for example, --chaosblade-exec-release
-        /opt/chaosblade-exec-0.4.0.tar.gz
+    - name: chaosblade-release
+      desc: The pull path of the chaosblade tar package, for example, --chaosblade-release
+        /opt/chaosblade-0.4.0.tar.gz
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
@@ -642,12 +642,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -656,14 +656,14 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-release
-      desc: The pull path of the chaosblade-exec tar package, for example, --chaosblade-exec-release
-        /opt/chaosblade-exec-0.4.0.tar.gz
+    - name: chaosblade-release
+      desc: The pull path of the chaosblade tar package, for example, --chaosblade-release
+        /opt/chaosblade-0.4.0.tar.gz
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
@@ -726,12 +726,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -740,14 +740,14 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-release
-      desc: The pull path of the chaosblade-exec tar package, for example, --chaosblade-exec-release
-        /opt/chaosblade-exec-0.4.0.tar.gz
+    - name: chaosblade-release
+      desc: The pull path of the chaosblade tar package, for example, --chaosblade-release
+        /opt/chaosblade-0.4.0.tar.gz
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
@@ -814,12 +814,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -828,14 +828,14 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-release
-      desc: The pull path of the chaosblade-exec tar package, for example, --chaosblade-exec-release
-        /opt/chaosblade-exec-0.4.0.tar.gz
+    - name: chaosblade-release
+      desc: The pull path of the chaosblade tar package, for example, --chaosblade-release
+        /opt/chaosblade-0.4.0.tar.gz
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
@@ -998,12 +998,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -1087,12 +1087,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -1149,12 +1149,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -1254,12 +1254,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -1369,12 +1369,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -1475,12 +1475,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -1597,12 +1597,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -1661,12 +1661,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -1760,12 +1760,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -1774,14 +1774,14 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-release
-      desc: The pull path of the chaosblade-exec tar package, for example, --chaosblade-exec-release
-        /opt/chaosblade-exec-0.4.0.tar.gz
+    - name: chaosblade-release
+      desc: The pull path of the chaosblade tar package, for example, --chaosblade-release
+        /opt/chaosblade-0.4.0.tar.gz
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
@@ -1845,12 +1845,12 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: image-repo
-      desc: Image repository of the chaosblade-exec-tool
+      desc: Image repository of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
     - name: image-version
-      desc: Image version of the chaosblade-exec-tool
+      desc: Image version of the chaosblade-tool
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -1859,14 +1859,14 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-release
-      desc: The pull path of the chaosblade-exec tar package, for example, --chaosblade-exec-release
-        /opt/chaosblade-exec-0.4.0.tar.gz
+    - name: chaosblade-release
+      desc: The pull path of the chaosblade tar package, for example, --chaosblade-release
+        /opt/chaosblade-0.4.0.tar.gz
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false

@@ -71,7 +71,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -193,7 +193,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -325,7 +325,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -425,7 +425,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -568,7 +568,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -679,7 +679,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -781,7 +781,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -908,7 +908,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1045,7 +1045,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1173,7 +1173,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1317,7 +1317,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1402,7 +1402,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1516,7 +1516,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1620,7 +1620,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1720,7 +1720,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1812,7 +1812,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1921,7 +1921,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2015,7 +2015,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2115,7 +2115,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2209,7 +2209,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2307,7 +2307,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2430,7 +2430,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2536,7 +2536,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2627,7 +2627,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false

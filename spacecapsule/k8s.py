@@ -11,7 +11,7 @@ from spacecapsule.template import resource_path
 
 
 def prepare_api(configfile):
-    config.load_kube_config(configfile)
+    config.load_kube_config()
     try:
         c = Configuration().get_default_copy()
     except AttributeError:
@@ -23,7 +23,7 @@ def prepare_api(configfile):
 
 
 def prepare_app_api(configfile):
-    config.load_kube_config(configfile)
+    config.load_kube_config()
     try:
         c = Configuration().get_default_copy()
     except AttributeError:

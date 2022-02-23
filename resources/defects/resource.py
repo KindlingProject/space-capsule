@@ -12,7 +12,7 @@ def resource(namespace, resource_type, resource_name, experiment_name, container
 
 def namespace_quota(namespace, cpu_limits, cpu_requests, mem_requests, mem_limits):
     args = locals()
-    bash_executor(k8s_resource, namespace_quota, {}, 'k8sResource-rollback.sh', args)
+    bash_executor(kubectl_script, k8s_resource, {}, 'k8sResource-rollback.sh', args)
 
 
 def rollback_args(args):
