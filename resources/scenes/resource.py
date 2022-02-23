@@ -30,7 +30,7 @@ def case9(namespace, deploy, requests, limits):
 @click.option('--mem_requests', 'mem_requests', default='500Mi')
 @click.option('--mem_limits', 'mem_limits', default='500Mi')
 def case11(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests):
-    namespace_quota(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests)
+    namespace_quota(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests,'case11')
 
     print("namespace_quota injected done！")
 

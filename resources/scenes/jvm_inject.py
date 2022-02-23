@@ -19,7 +19,7 @@ def case12(namespace, pod, time, offset, kube_config):
 
 @click.command()
 @click.option('--namespace', 'namespace', default="practice")
-@click.option('--pod', 'pod')
+@click.option('--pod', 'pod',default="bop-67bddbd49-n5nzf")
 @click.option('--kube-config', 'kube_config', default="~/.kube/config")
 def case13(namespace, pod, kube_config):
     dead_lock(namespace, pod, kube_config, 'case13')
