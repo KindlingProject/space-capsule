@@ -14,6 +14,7 @@ from spacecapsule.template import chaosblade_prepare_script, resource_path, chao
 def bash_executor(create_script, create_template, create_rollback_args, rollback_template_file, args):
     # TODO 部分参数需要executor选择
     script = create_script(create_template, args)
+    print(script)
     process = Popen(script, shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE)
     out, err = process.communicate()
     args.update(create_rollback_args(args))
@@ -26,7 +27,9 @@ def inject_code(namespace, pod, process_name, pid, classname, methodname, kube_c
     agent_uid, api_instance, stderr = chaosblade_jvm_prepare(args, kube_config, namespace, pod)
     # Ask k8s_executor to inject target code
     inject_command = chaosblade_prepare_script(chaosblade_inject, args)
+    print(inject_command)
     inject_msg, stderr = executor_command_inside_namespaced_pod(api_instance, namespace, pod, inject_command)
+    print(stderr)
     experiment_uid = jsonpath.jsonpath(json.loads(inject_msg), 'result')
     print('exe', experiment_uid)
     print('agent', agent_uid)

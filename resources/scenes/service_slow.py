@@ -44,10 +44,10 @@ def node_network_delay(node_name, interface, time, offset, remote_port, local_po
             'ifconfig | grep -B 1 {}'.format(node_ip) + '| awk \'NR==1{print $1}\'',
         ]
 
-        chaosblade_pod_list = api_instance.list_namespaced_pod('chaosblade-exec')
+        chaosblade_pod_list = api_instance.list_namespaced_pod('chaosblade')
         for chaosblade_pod in chaosblade_pod_list.items:
             if chaosblade_pod.spec.node_name == node_name:
-                stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade-exec',
+                stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade',
                                                                         chaosblade_pod.metadata.name,
                                                                         commands)
                 interface = stdout
@@ -59,6 +59,7 @@ def node_network_delay(node_name, interface, time, offset, remote_port, local_po
           None, '22,10250', None, None, node_name, 'Insert a network delay into node {}, time {}, offset {}, timeout {}'
           .format(node_name, time, offset, timeout))
 
+    print("node network delay injected done！")
 
 # case2 only calico now
 @click.command()
@@ -90,10 +91,10 @@ def pod_network_delay(namespace, network_plugin, time, offset, timeout, kube_con
         'ip route | grep {} '.format(pod_ip) + '| awk \'{print $3}\'',
     ]
 
-    pod_list = api_instance.list_namespaced_pod('chaosblade-exec')
+    pod_list = api_instance.list_namespaced_pod('chaosblade')
     for pod in pod_list.items:
         if pod.status.host_ip == host_ip:
-            stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade-exec', pod.metadata.name,
+            stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade', pod.metadata.name,
                                                                     commands)
             calico_interface = stdout
             break
@@ -103,6 +104,8 @@ def pod_network_delay(namespace, network_plugin, time, offset, timeout, kube_con
           None, None, None, None, node_name,
           'Insert a network delay into pod {}, time {}, offset {}, timeout {}'.format(pod_name, time, offset,
                                                                                       timeout))
+
+    print("pod network delay injected done！")
 
 
 def field_selector(pod, fields):

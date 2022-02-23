@@ -90,7 +90,7 @@ def resource_limit(args):
     return command
 
 
-def namespace_quota(args):
+def namespace_quota_yaml(args):
     template_file_name = 'namespace_quota.yaml'
     template = template_env.get_template(template_file_name)
     command = template.render(args)
@@ -116,3 +116,11 @@ def chaosblade_jvm_delay(args):
     template = template_env.get_template(template_file_name)
     command = template.render(args)
     return command
+
+
+def k8s_resource_script(command_script, args):
+    template_file_name = 'k8sResource.sh'
+    template = script_env.get_template(template_file_name)
+    args['k8s_resources'] = command_script(args)
+    script = template.render(args)
+    return script

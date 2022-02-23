@@ -92,7 +92,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -269,7 +269,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -411,7 +411,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -521,7 +521,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -674,7 +674,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -846,7 +846,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1000,7 +1000,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1170,7 +1170,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1281,7 +1281,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1428,7 +1428,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1550,7 +1550,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1690,7 +1690,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1824,7 +1824,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -1969,7 +1969,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2127,7 +2127,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2242,7 +2242,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2363,7 +2363,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2478,7 +2478,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2597,7 +2597,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2718,7 +2718,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2834,7 +2834,7 @@ items:
       required: false
       requiredWhenDestroyed: false
     - name: install-path
-      desc: install path default /opt/chaosblade-exec，use this flag when the channel is
+      desc: install path default /opt/chaosblade，use this flag when the channel is
         ssh
       noArgs: false
       required: false
@@ -2909,29 +2909,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -3023,29 +3023,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -3111,29 +3111,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -3220,29 +3220,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -3381,29 +3381,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -3503,29 +3503,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -3598,29 +3598,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -3736,29 +3736,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -3884,29 +3884,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -4023,29 +4023,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -4178,29 +4178,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -4275,29 +4275,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -4406,29 +4406,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -4518,29 +4518,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -4646,29 +4646,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -4762,29 +4762,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -4889,29 +4889,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -5023,29 +5023,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -5128,29 +5128,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -5239,29 +5239,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -5344,29 +5344,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -5453,29 +5453,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -5564,29 +5564,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -5668,29 +5668,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -5838,29 +5838,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -5948,7 +5948,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -6018,29 +6018,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -6182,29 +6182,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -6273,7 +6273,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -6343,29 +6343,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -6467,29 +6467,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -6599,29 +6599,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -6731,29 +6731,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -6916,29 +6916,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -7032,7 +7032,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -7102,29 +7102,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -7279,29 +7279,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -7449,29 +7449,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -7547,7 +7547,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -7617,29 +7617,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -7776,29 +7776,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -7975,29 +7975,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -8109,7 +8109,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -8179,29 +8179,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -8364,29 +8364,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -8474,7 +8474,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -8544,29 +8544,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -8684,29 +8684,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -8866,29 +8866,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -8964,7 +8964,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -9034,29 +9034,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -9209,29 +9209,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -9309,7 +9309,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -9379,29 +9379,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -9556,29 +9556,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -9656,7 +9656,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -9726,29 +9726,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -9883,29 +9883,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -10019,29 +10019,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -10172,29 +10172,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -10316,29 +10316,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -10487,29 +10487,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -10577,7 +10577,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -10647,29 +10647,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -10831,29 +10831,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -10941,7 +10941,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -11011,29 +11011,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -11215,29 +11215,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -11346,7 +11346,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -11416,29 +11416,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -11566,29 +11566,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -11742,29 +11742,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -11892,29 +11892,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -12015,29 +12015,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -12181,29 +12181,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -12357,29 +12357,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -12524,29 +12524,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -12707,29 +12707,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -12832,29 +12832,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -12985,29 +12985,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -13118,29 +13118,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -13257,29 +13257,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -13390,29 +13390,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -13527,29 +13527,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -13674,29 +13674,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -13843,29 +13843,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -13943,7 +13943,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -14013,29 +14013,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -14152,29 +14152,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -14299,29 +14299,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -14460,29 +14460,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -14626,29 +14626,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -14815,29 +14815,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -14973,29 +14973,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -15135,29 +15135,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -15302,29 +15302,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -15392,7 +15392,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -15462,29 +15462,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -15613,29 +15613,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -15762,29 +15762,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -15938,29 +15938,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -16028,7 +16028,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -16098,29 +16098,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -16275,29 +16275,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -16380,7 +16380,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -16450,29 +16450,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -16624,29 +16624,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -16724,7 +16724,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -16794,29 +16794,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -16963,29 +16963,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false
@@ -17061,7 +17061,7 @@ items:
       required: true
       requiredWhenDestroyed: false
     - name: exception-message
-      desc: Specify exception message for exception experiment, default value is chaosblade-exec-mock-exception
+      desc: Specify exception message for exception experiment, default value is chaosblade-mock-exception
       noArgs: false
       required: false
       requiredWhenDestroyed: false
@@ -17131,29 +17131,29 @@ items:
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-path
+    - name: chaosblade-path
       desc: Chaosblade tool deployment path, default value is /opt. Please select
         a path with write permission
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-override
-      desc: Override the exists chaosblade-exec tool in the target container or not, default
+    - name: chaosblade-override
+      desc: Override the exists chaosblade tool in the target container or not, default
         value is false
       noArgs: true
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-deploy-mode
-      desc: The mode of chaosblade-exec deployment in container, the values are copy and
+    - name: chaosblade-deploy-mode
+      desc: The mode of chaosblade deployment in container, the values are copy and
         download, the default value is copy which copy tool from the operator to the
         target container. If you select download mode, the operator will download
-        chaosblade-exec tool from the chaosblade-exec-download-url.
+        chaosblade tool from the chaosblade-download-url.
       noArgs: false
       required: false
       requiredWhenDestroyed: false
-    - name: chaosblade-exec-download-url
-      desc: The chaosblade-exec downloaded address. If you use download deployment mode,
-        you must specify the value, or config chaosblade-exec-download-url when deploying
+    - name: chaosblade-download-url
+      desc: The chaosblade downloaded address. If you use download deployment mode,
+        you must specify the value, or config chaosblade-download-url when deploying
         the operator
       noArgs: false
       required: false

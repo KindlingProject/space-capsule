@@ -10,7 +10,7 @@ from spacecapsule.k8s import prepare_api, executor_command_inside_namespaced_pod
 
 
 @click.command()
-@click.option('--namespace', 'namespace')
+@click.option('--namespace', 'namespace', default='practice')
 @click.option('--deploy', 'deploy')
 @click.option('--requests', 'requests', default='cpu=100m,memory=400Mi')
 @click.option('--limits', 'limits', default='cpu=100m,memory=400Mi')
@@ -21,7 +21,7 @@ def case9(namespace, deploy, requests, limits):
         index = random.randint(0, len(deploy_list.items) - 1)
         deploy = deploy_list.items[index].metadata.name
     resource(namespace, 'deploy', deploy, 'case9', None, limits, requests)
-
+    print("resource limits injected done!")
 
 @click.command()
 @click.option('--namespace', 'namespace', default='practice')
@@ -30,8 +30,9 @@ def case9(namespace, deploy, requests, limits):
 @click.option('--mem_requests', 'mem_requests', default='500Mi')
 @click.option('--mem_limits', 'mem_limits', default='500Mi')
 def case11(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests):
-    namespace_quota(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests)
+    namespace_quota(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests,'case11')
 
+    print("namespace_quota injected done！")
 
 @click.command()
 @click.option('--timeout', 'timeout')
@@ -49,11 +50,13 @@ def case8(timeout, names, labels):
         '-c',
         'cat /proc/cpuinfo |grep processor |wc -l',
     ]
-    pod_list = api_instance.list_namespaced_pod('chaosblade-exec')
+    pod_list = api_instance.list_namespaced_pod('chaosblade')
     for pod in pod_list.items:
         if pod.spec.node_name == names:
-            stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade-exec', pod.metadata.name,
+            stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade', pod.metadata.name,
                                                                     commands)
             cpu_count = stdout
             break
     cpu('node', cpu_count, 90, 'case8', timeout, labels, None, names, None)
+
+    print("cpu load injected done!")

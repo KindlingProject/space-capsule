@@ -11,7 +11,7 @@ from spacecapsule.template import resource_path
 
 
 def prepare_api(configfile):
-    config.load_kube_config(configfile)
+    config.load_kube_config()
     try:
         c = Configuration().get_default_copy()
     except AttributeError:
@@ -23,7 +23,7 @@ def prepare_api(configfile):
 
 
 def prepare_app_api(configfile):
-    config.load_kube_config(configfile)
+    config.load_kube_config()
     try:
         c = Configuration().get_default_copy()
     except AttributeError:
@@ -71,8 +71,8 @@ def executor_command_inside_namespaced_pod(api_instance, namespace, name, comman
                           stdout=True, tty=False,
                           _preload_content=False
                           )
-    stdout = api_response.readline_stdout(timeout=15)
-    stderr = api_response.readline_stderr(timeout=15)
+    stdout = api_response.readline_stdout(timeout=120)
+    stderr = api_response.readline_stderr(timeout=120)
     api_response.close()
     return stdout, stderr
 
