@@ -32,10 +32,8 @@ def inject_code(namespace, pod, process_name, pid, classname, methodname, kube_c
     if stderr is not None:
         print(stderr)
     experiment_uid = jsonpath.jsonpath(json.loads(inject_msg), 'result')
-    print('exe', experiment_uid)
-    print('agent', agent_uid)
     # Save the UID which blade create
-    args.update(agent_uid=agent_uid[0], experiment_uid=experiment_uid[0])
+    args.update(agent_uid=agent_uid, experiment_uid=experiment_uid[0])
     args.update(desc=args)
     store_experiment(args, rollback_command('chaosbladeJvm-rollback.sh', args), inject_msg, stderr)
 
@@ -48,7 +46,7 @@ def delay_code(namespace, pod, process, pid, classname, methodname, time, offset
     delay_msg, delay_err = executor_command_inside_namespaced_pod(api_instance, namespace, pod, delay_command)
     experiment_uid = jsonpath.jsonpath(json.loads(delay_msg), 'result')
     # Save the UID which blade create
-    args.update(agent_uid=agent_uid[0], experiment_uid=experiment_uid[0])
+    args.update(agent_uid=agent_uid, experiment_uid=experiment_uid[0])
     args.update(desc=args)
     store_experiment(args, rollback_command('chaosbladeJvm-rollback.sh', args), delay_msg, stderr)
 
@@ -74,11 +72,9 @@ def chaosblade_jvm_prepare(args, kube_config, namespace, pod):
     print('Copy file finished')
     prepare_args = {'process': 'java'}
     prepare_command = chaosblade_prepare_script(chaosblade_prepare, prepare_args)
-    print(prepare_command)
     prepare_msg, stderr = executor_command_inside_namespaced_pod(api_instance, namespace, pod, prepare_command)
     print(prepare_msg, stderr)
     agent_uid = jsonpath.jsonpath(json.loads(prepare_msg), 'result')
-    print('agent', agent_uid)
     return agent_uid[0], api_instance, stderr
 
 
