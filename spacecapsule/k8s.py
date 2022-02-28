@@ -76,7 +76,3 @@ def executor_command_inside_namespaced_pod(api_instance, namespace, name, comman
     api_response.close()
     return stdout, stderr
 
-
-def check_exist_inside_namespaced_pod(api_instance, namespace, name, file_path):
-    command = 'test -x {}'.format(file_path)
-    executor_command_inside_namespaced_pod(api_instance, namespace, name, command)
