@@ -9,7 +9,7 @@ from spacecapsule.executor import chaosblade_ssh_executor, chaosblade_ssh_jvm_ex
 @click.option('--pwd', 'pwd', default='pwd')
 @click.option('--interface', 'interface', default='ens192')
 def case1_vm(ip, user, pwd, interface):
-    command = '/opt/chaosblade/blade create network delay --time 3000 --offset 1000 --interface ' + interface + ' --local-port 8080,8081'
+    command = '/opt/chaosblade/blade create network delay --time 3000 --offset 100 --interface ' + interface + ' --local-port 8080,8081'
     chaosblade_ssh_executor(ip, user, pwd, command, 'case1-vm')
 
 
