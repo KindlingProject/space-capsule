@@ -11,6 +11,7 @@ from spacecapsule.executor import chaosblade_ssh_executor, chaosblade_ssh_jvm_ex
 def case1_vm(ip, user, pwd, interface):
     command = '/opt/chaosblade/blade create network delay --time 3000 --offset 100 --interface ' + interface + ' --local-port 8080,8081'
     chaosblade_ssh_executor(ip, user, pwd, command, 'case1-vm')
+    print("node network delay injected done！")
 
 
 # 向服务节点注入丢包
