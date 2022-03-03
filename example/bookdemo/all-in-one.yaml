@@ -157,7 +157,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: rabbmq-svc
+  name: rabbitmq-svc
   namespace: practice
 spec:
   ports:
