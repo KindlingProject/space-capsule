@@ -166,7 +166,7 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    app: rabbmq
+    app: rabbitmq
   sessionAffinity: None
   type: ClusterIP
 
