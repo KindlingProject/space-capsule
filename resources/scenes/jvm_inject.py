@@ -53,7 +53,7 @@ def slow_code(namespace, pod, time, offset, kube_config, experiment_name):
         pod_list = api_instance.list_namespaced_pod(namespace)
         pod = select_pod_from_ready(pod_list.items, None, None).metadata.name
 
-    if pod.startswitch('bop'):
+    if pod.startswith('bop'):
         method = 'httpTxn2And4'
     else:
         method = 'httpTxn1'
@@ -67,7 +67,7 @@ def slow_sql(namespace, pod, kube_config, experiment_name):
         pod_list = api_instance.list_namespaced_pod(namespace)
         pod = select_pod_from_ready(pod_list.items, None, None).metadata.name
 
-    if pod.startswitch('bop'):
+    if pod.startswith('bop'):
         method = 'httpTxn2And4'
     else:
         method = 'httpTxn1'
@@ -96,7 +96,7 @@ def dead_lock(namespace, pod, kube_config, experiment_name):
         pod_list = api_instance.list_namespaced_pod(namespace)
         pod = select_pod_from_ready(pod_list.items, None, None).metadata.name
 
-    if pod.startswitch('bop'):
+    if pod.startswith('bop'):
         method = 'httpTxn2And4'
     else:
         method = 'httpTxn1'
