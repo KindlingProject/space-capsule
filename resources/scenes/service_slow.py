@@ -5,6 +5,7 @@ import click
 import jsonpath
 
 from resources.defects.network import delay
+from spacecapsule.history import check_status
 from spacecapsule.k8s import prepare_api, executor_command_inside_namespaced_pod
 
 
@@ -15,6 +16,9 @@ from spacecapsule.k8s import prepare_api, executor_command_inside_namespaced_pod
 @click.option('--time', 'time', default=3000)
 @click.option('--offset', 'offset', default=100)
 @click.option('--timeout', 'timeout', default=10000)
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 @click.option('--kube-config', 'kube_config', default="~/.kube/config")
 def case1(node_name, interface, time, offset, timeout, kube_config):
     node_network_delay(node_name, interface, time, offset, None, None, timeout, kube_config)
@@ -69,6 +73,9 @@ def node_network_delay(node_name, interface, time, offset, remote_port, local_po
 @click.option('--offset', 'offset', default=100)
 @click.option('--timeout', 'timeout')
 @click.option('--kube-config', 'kube_config', default="~/.kube/config")
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 def case2(namespace, network_plugin, time, offset, timeout, kube_config):
     pod_network_delay(namespace, network_plugin, time, offset, timeout, kube_config)
 

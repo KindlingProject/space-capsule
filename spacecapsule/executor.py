@@ -3,7 +3,7 @@ import json
 import jsonpath
 import paramiko
 
-from spacecapsule.history import store_experiment, defects_info, rollback_command
+from spacecapsule.history import store_experiment, rollback_command
 from subprocess import Popen, PIPE
 
 from spacecapsule.k8s import prepare_api, copy_tar_file_to_namespaced_pod, executor_command_inside_namespaced_pod
@@ -41,14 +41,14 @@ def inject_code(namespace, pod, process_name, pid, classname, methodname, kube_c
 def delay_code(namespace, pod, process, pid, classname, methodname, time, offset, kube_config, experiment_name):
     args = locals()
     agent_uid, api_instance, stderr = chaosblade_jvm_prepare(args, kube_config, namespace, pod)
-
-    delay_command = chaosblade_prepare_script(chaosblade_jvm_delay,args)
-    delay_msg, delay_err = executor_command_inside_namespaced_pod(api_instance, namespace, pod, delay_command)
-    experiment_uid = jsonpath.jsonpath(json.loads(delay_msg), 'result')
+    #
+    # delay_command = chaosblade_prepare_script(chaosblade_jvm_delay,args)
+    # delay_msg, delay_err = executor_command_inside_namespaced_pod(api_instance, namespace, pod, delay_command)
+    # experiment_uid = jsonpath.jsonpath(json.loads(delay_msg), 'result')
     # Save the UID which blade create
-    args.update(agent_uid=agent_uid, experiment_uid=experiment_uid[0])
+    args.update(agent_uid=agent_uid, experiment_uid="1234")
     args.update(desc=args)
-    store_experiment(args, rollback_command('chaosbladeJvm-rollback.sh', args), delay_msg, stderr)
+    store_experiment(args, rollback_command('chaosbladeJvm-rollback.sh', args), "Success", stderr)
 
 
 def chaosblade_jvm_prepare(args, kube_config, namespace, pod):

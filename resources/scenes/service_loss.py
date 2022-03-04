@@ -3,6 +3,7 @@ import random
 import click
 
 from resources.defects.network import loss
+from spacecapsule.history import check_status
 from spacecapsule.k8s import prepare_api, executor_command_inside_namespaced_pod
 
 
@@ -13,6 +14,9 @@ from spacecapsule.k8s import prepare_api, executor_command_inside_namespaced_pod
 @click.option('--percent', 'percent', default=80)
 @click.option('--timeout', 'timeout', default=10000)
 @click.option('--kube-config', 'kube_config', default="~/.kube/config")
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 def case3(node_name, interface, percent, timeout, kube_config):
     node_network_loss(node_name, interface, percent, None, None, timeout, kube_config)
 
@@ -69,6 +73,9 @@ def node_network_loss(node_name, interface, percent, remote_port, local_port, ti
 @click.option('--percent', 'percent', default=80)
 @click.option('--timeout', 'timeout', default=10000)
 @click.option('--kube-config', 'kube_config', default="~/.kube/config")
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 def case4(namespace, network_plugin, time, percent, timeout, kube_config):
     pod_network_loss(namespace, network_plugin, time, percent, timeout, kube_config)
 

@@ -1,4 +1,4 @@
-defect-name: {{ expertiment_name }}
+defect-name: {{ experiment_name }}
 defect-description: {{ desc }}
 create-time: {{ create_time }}
 status: {{ status }}

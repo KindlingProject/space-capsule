@@ -6,6 +6,7 @@ from kubernetes.config import kube_config
 from resources.defects.cpu import cpu
 from resources.defects.resource import resource, namespace_quota
 from resources.scenes.service_slow import select_pod_from_ready
+from spacecapsule.history import check_status
 from spacecapsule.k8s import prepare_api, executor_command_inside_namespaced_pod, prepare_app_api
 
 
@@ -14,6 +15,9 @@ from spacecapsule.k8s import prepare_api, executor_command_inside_namespaced_pod
 @click.option('--deploy', 'deploy')
 @click.option('--requests', 'requests', default='cpu=100m,memory=400Mi')
 @click.option('--limits', 'limits', default='cpu=100m,memory=400Mi')
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 def case9(namespace, deploy, requests, limits):
     api_instance = prepare_app_api(kube_config)
     if deploy is None:
@@ -29,6 +33,9 @@ def case9(namespace, deploy, requests, limits):
 @click.option('--cpu_limits', 'cpu_limits', default='100m')
 @click.option('--mem_requests', 'mem_requests', default='500Mi')
 @click.option('--mem_limits', 'mem_limits', default='500Mi')
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 def case11(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests):
     namespace_quota(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests,'case11')
 
@@ -38,6 +45,9 @@ def case11(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests):
 @click.option('--timeout', 'timeout')
 @click.option('--names', 'names')
 @click.option('--labels', 'labels')
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 def case8(timeout, names, labels):
     api_instance = prepare_api(kube_config)
     if names is None:
