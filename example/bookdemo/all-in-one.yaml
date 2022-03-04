@@ -157,7 +157,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: rabbitmq-svc
+  name: rocketmq-svc
   namespace: practice
 spec:
   ports:
@@ -166,7 +166,7 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    app: rabbitmq
+    app: rocketmq
   sessionAffinity: None
   type: ClusterIP
 
@@ -657,7 +657,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rabbitmq
+  name: rocketmq
   namespace: practice
 spec:
   progressDeadlineSeconds: 600
@@ -665,7 +665,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: rabbitmq
+      app: rocketmq
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -674,7 +674,7 @@ spec:
   template:
     metadata:
       labels:
-        app: rabbitmq
+        app: rocketmq
     spec:
       containers:
       - image: 10.1.11.205/practice/bookdemo:v0.1
