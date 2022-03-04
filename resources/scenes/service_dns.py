@@ -3,6 +3,7 @@ import random
 import click
 
 from resources.defects.network import dns
+from spacecapsule.history import  check_status
 from spacecapsule.k8s import prepare_api, copy_tar_file_to_namespaced_pod, executor_command_inside_namespaced_pod
 
 # case6_0:node network dns
@@ -48,6 +49,9 @@ def node_network_dns(node_name, domain, ip, timeout, kube_config):
 @click.option('--ip', 'ip', default='10.0.0.0',help="dst-ip")
 @click.option('--timeout', 'timeout', default=10000)
 @click.option('--kube-config', 'kube_config', default="~/.kube/config")
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 def case6(namespace, pod_name, domain, ip, timeout, kube_config):
     pod_network_dns(namespace, pod_name, domain, ip, timeout, kube_config)
 

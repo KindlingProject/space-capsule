@@ -2,6 +2,7 @@ import click
 
 from resources.scenes.service_slow import select_pod_from_ready
 from spacecapsule.executor import inject_code, delay_code
+from spacecapsule.history import  check_status
 from spacecapsule.k8s import prepare_api
 
 
@@ -11,6 +12,9 @@ from spacecapsule.k8s import prepare_api
 @click.option('--time', 'time', default=3000)
 @click.option('--offset', 'offset', default=100)
 @click.option('--kube-config', 'kube_config', default="~/.kube/config")
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 def case12(namespace, pod, time, offset, kube_config):
     slow_code(namespace, pod, time, offset, kube_config, 'case12')
 
@@ -21,6 +25,9 @@ def case12(namespace, pod, time, offset, kube_config):
 @click.option('--namespace', 'namespace', default="practice")
 @click.option('--pod', 'pod')
 @click.option('--kube-config', 'kube_config', default="~/.kube/config")
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 def case13(namespace, pod, kube_config):
     dead_lock(namespace, pod, kube_config, 'case13')
 
@@ -31,6 +38,9 @@ def case13(namespace, pod, kube_config):
 @click.option('--namespace', 'namespace', default="practice")
 @click.option('--pod', 'pod')
 @click.option('--kube-config', 'kube_config', default="~/.kube/config")
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 def case14(namespace, pod, kube_config):
     unexpected_err(namespace, pod, kube_config, 'case14')
 
@@ -41,6 +51,9 @@ def case14(namespace, pod, kube_config):
 @click.option('--namespace', 'namespace')
 @click.option('--pod', 'pod')
 @click.option('--kube-config', 'kube_config', default="~/.kube/config")
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
 def case15(namespace, pod, kube_config):
     slow_sql(namespace, pod, kube_config, 'case15')
 
