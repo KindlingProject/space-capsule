@@ -14,7 +14,6 @@ from spacecapsule.template import chaosblade_prepare_script, resource_path, chao
 def bash_executor(create_script, create_template, create_rollback_args, rollback_template_file, args):
     # TODO 部分参数需要executor选择
     script = create_script(create_template, args)
-    print(script)
     process = Popen(script, shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE)
     out, err = process.communicate()
     args.update(create_rollback_args(args))
@@ -41,12 +40,12 @@ def inject_code(namespace, pod, process_name, pid, classname, methodname, kube_c
 def delay_code(namespace, pod, process, pid, classname, methodname, time, offset, kube_config, experiment_name):
     args = locals()
     agent_uid, api_instance, stderr = chaosblade_jvm_prepare(args, kube_config, namespace, pod)
-    #
-    # delay_command = chaosblade_prepare_script(chaosblade_jvm_delay,args)
-    # delay_msg, delay_err = executor_command_inside_namespaced_pod(api_instance, namespace, pod, delay_command)
-    # experiment_uid = jsonpath.jsonpath(json.loads(delay_msg), 'result')
+
+    delay_command = chaosblade_prepare_script(chaosblade_jvm_delay,args)
+    delay_msg, delay_err = executor_command_inside_namespaced_pod(api_instance, namespace, pod, delay_command)
+    experiment_uid = jsonpath.jsonpath(json.loads(delay_msg), 'result')
     # Save the UID which blade create
-    args.update(agent_uid=agent_uid, experiment_uid="1234")
+    args.update(agent_uid=agent_uid, experiment_uid=experiment_uid[0])
     args.update(desc=args)
     store_experiment(args, rollback_command('chaosbladeJvm-rollback.sh', args), "Success", stderr)
 
