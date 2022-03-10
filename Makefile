@@ -15,4 +15,5 @@ build:
 	cp ./dist/space-capsule capsule
 	cp -r ./example ./build/space-capsule-alpha/
 	cp install.sh ./build/space-capsule-alpha/
+	cp jemeter/* ./build/space-capsule-alpha/.
 	tar -czvf space-capsule-alpha.tar.gz -C ./build space-capsule-alpha/
