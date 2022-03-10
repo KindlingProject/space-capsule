@@ -19,8 +19,9 @@ Kindling 是一款基于标准化错误定界和定位理念设计的开源监�
     v1.18.1 -> 1.23.1 已验证
     其他版本如不适配，请提issues,提pr更加欢迎
 ### k8s开始 
-1. 下载release到master节点(保证能执行kubectl命令即可)之后解压
-2. cd space-capsule目录,执行./install.sh安装 [chaosblade-operator](https://github.com/chaosblade-io/chaosblade-operator) 和 示例应用
+1. 下载release到master节点(保证能执行kubectl命令即可)之后解压 
+2. 创建演示namespace -> kubectl create namespace practice
+3. cd space-capsule目录,执行./install.sh安装 [chaosblade-operator](https://github.com/chaosblade-io/chaosblade-operator) 和 示例应用
 - 执行 kubectl get po -n chaosblade 可查看chaosblade-operator是否安装成功
 ```
 
