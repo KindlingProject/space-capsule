@@ -162,7 +162,7 @@ spec:
         app: bop
     spec:
       containers:
-      - image: 10.1.11.205/practice/bookdemo:v0.1
+      - image: practicedemo/bookdemo:v0.1
         imagePullPolicy: Always
         name: bookdemo
         ports:
@@ -215,7 +215,7 @@ spec:
         app: coreservice
     spec:
       containers:
-      - image: 10.1.11.205/practice/bookdemo:v0.1
+      - image: practicedemo/bookdemo:v0.1
         imagePullPolicy: Always
         name: bookdemo
         ports:
@@ -264,15 +264,11 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      annotations:
-        cattle.io/timestamp: "2022-02-10T09:29:33Z"
-        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"ng","kind":"ClusterIP","name":"8080tcp2","protocol":"TCP"}]]'
-      creationTimestamp: null
       labels:
         app: cronservice
     spec:
       containers:
-      - image: 10.1.11.205/practice/bookdemo:v0.1
+      - image: practicedemo/bookdemo:v0.1
         imagePullPolicy: Always
         name: bookdemo
         ports:
@@ -325,7 +321,7 @@ spec:
         app: dataservice
     spec:
       containers:
-      - image: 10.1.11.205/practice/bookdemo:v0.1
+      - image: practicedemo/bookdemo:v0.1
         imagePullPolicy: Always
         name: bookdemo
         ports:
@@ -378,7 +374,7 @@ spec:
         app: gateway
     spec:
       containers:
-      - image: 10.1.11.205/practice/bookdemo:v0.1
+      - image: practicedemo/bookdemo:v0.1
         imagePullPolicy: Always
         name: bookdemo
         ports:
@@ -432,7 +428,7 @@ spec:
         app: ng
     spec:
       containers:
-      - image: 10.1.11.205/practice/bookdemo:v0.1
+      - image: practicedemo/bookdemo:v0.1
         imagePullPolicy: Always
         name: bookdemo
         ports:
@@ -485,7 +481,7 @@ spec:
         app: riskservice
     spec:
       containers:
-      - image: 10.1.11.205/practice/bookdemo:v0.1
+      - image: practicedemo/bookdemo:v0.1
         imagePullPolicy: Always
         name: bookdemo
         ports:
@@ -538,7 +534,7 @@ spec:
         app: rocketmq
     spec:
       containers:
-      - image: 10.1.11.205/practice/bookdemo:v0.1
+      - image: practicedemo/bookdemo:v0.1
         imagePullPolicy: Always
         name: bookdemo
         ports:
