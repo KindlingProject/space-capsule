@@ -18,10 +18,6 @@ def namespace_quota(namespace, cpu_limits, cpu_requests, mem_requests, mem_limit
 def network_policy(namespace, label_name, label_value,experiment_name,desc):
     args = locals()
     args['desc'] = 'network_policy:' + desc
-    args['experiment_name'] = experiment_name
-    args['namespace'] = namespace
-    args['lable_name'] = label_name
-    args['label_value'] = label_value
     bash_executor(k8s_resource_script, network_policy_yaml, rollback_args2, 'k8sResource-rollback.sh', args)
 
 def rollback_args(args):
