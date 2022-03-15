@@ -20,7 +20,7 @@ import click
 # # space-capsule undo  {experiment-name}
 # space-capsule undo network-delay
 from spacecapsule.executor import bash_executor
-from spacecapsule.template import chaosblade_resource, chaosblade_resource_script
+from spacecapsule.template import chaosblade_resource, chaosblade_resource_script, network_policy_yaml
 
 
 def delay(scope, interface, time, experiment_name, destination_ip, remote_port, local_port, offset, timeout,
