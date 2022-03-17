@@ -33,7 +33,7 @@ from spacecapsule.template import chaosblade_resource, chaosblade_resource_scrip
 @click.option('--timeout', 'timeout')
 @click.option('--labels', 'labels')
 @click.option('--names', 'names')
-def diskfill(scope, experiment_name, path, size, reserve, percent, timeout, labels, names):
+def disk_fill(scope, experiment_name, path, size, reserve, percent, timeout, labels, names):
     args = locals()
     args['action'] = 'fill'
     args['target'] = 'disk'
