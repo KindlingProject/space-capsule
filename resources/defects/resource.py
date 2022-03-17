@@ -5,7 +5,7 @@ from spacecapsule.template import resource_limit, kubectl_script, k8s_resource, 
     k8s_resource_script, network_policy_yaml
 
 
-def resource(namespace, resource_type, resource_name, experiment_name, container, limits, requests):
+def resource(namespace, resource_type, resource_name, experiment_name, container, limits, requests,desc):
     args = locals()
     # defects_info(args)
     bash_executor(kubectl_script, resource_limit, rollback_args, 'kubectl-rollback.sh', args)
