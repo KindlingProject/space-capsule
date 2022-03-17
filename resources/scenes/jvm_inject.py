@@ -94,7 +94,7 @@ def unexpected_err(namespace, pod, kube_config, experiment_name):
         pod_list = api_instance.list_namespaced_pod(namespace)
         pod = select_pod_from_ready(pod_list.items, None, None).metadata.name
 
-    if pod.startswith()('bop'):
+    if pod.startswith('bop'):
         method = 'httpTxn2And4'
     else:
         method = 'httpTxn1'
