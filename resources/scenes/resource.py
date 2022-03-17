@@ -24,7 +24,8 @@ def case9(namespace, deploy, requests, limits):
         deploy_list = api_instance.list_namespaced_deployment('practice')
         index = random.randint(0, len(deploy_list.items) - 1)
         deploy = deploy_list.items[index].metadata.name
-    resource(namespace, 'deploy', deploy, 'case9', None, limits, requests)
+    resource(namespace, 'deploy', deploy, 'case9', None, limits, requests, 'requests {} limits {}'
+             .format(requests, limits))
     print("resource limits injected done!")
 
 @click.command()
@@ -37,7 +38,11 @@ def case9(namespace, deploy, requests, limits):
               is_eager=True, callback=check_status,
               help="Check experiment history", expose_value=False)
 def case11(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests):
-    namespace_quota(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests,'case11')
+    namespace_quota(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests,'case11', 'cpu_requests{} '
+                                                                                            'cpu_limits {} '
+                                                                                            'mem_requests{} '
+                                                                                            'mem_limits{} '
+                    .format(cpu_requests, cpu_limits,mem_requests,mem_limits))
 
     print("namespace_quota injected done！")
 

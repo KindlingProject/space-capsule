@@ -5,6 +5,17 @@ from spacecapsule.executor import inject_code, delay_code
 from spacecapsule.history import  check_status
 from spacecapsule.k8s import prepare_api
 
+@click.command()
+@click.option('--namespace', 'namespace', default="practice")
+@click.option('--pod', 'pod')
+@click.option('--kube-config', 'kube_config', default="~/.kube/config")
+@click.option("--check_history", is_flag=True, default=True,
+              is_eager=True, callback=check_status,
+              help="Check experiment history", expose_value=False)
+def case10(namespace, pod, kube_config):
+    #fd_run_out(namespace, pod, kube_config, 'case10')
+
+    print("fd run out injected done！")
 
 @click.command()
 @click.option('--namespace', 'namespace')
@@ -58,6 +69,21 @@ def case15(namespace, pod, kube_config):
     slow_sql(namespace, pod, kube_config, 'case15')
 
     print("slow_sql injected done！")
+
+
+def fd_run_out(namespace, pod, kube_config, experiment_name):
+    api_instance = prepare_api(kube_config)
+    if pod is None:
+        pod_list = api_instance.list_namespaced_pod(namespace)
+        pod = select_pod_from_ready(pod_list.items, None, None).metadata.name
+
+    if pod.startswith('bop'):
+        method = 'httpTxn2And4'
+    else:
+        method = 'httpTxn1'
+    inject_code(namespace, pod, 'java', None, 'com.imooc.appoint.service.Impl.PracticeServiceImpl',
+                method, None, '/opt/chaosblade/scripts/FdRunOutService.java', 'fdRunOut',
+                experiment_name)
 
 
 def slow_code(namespace, pod, time, offset, kube_config, experiment_name):

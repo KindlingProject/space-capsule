@@ -52,8 +52,9 @@ def delay_code(namespace, pod, process, pid, classname, methodname, time, offset
 
 def chaosblade_jvm_prepare(args, kube_config, namespace, pod):
     api_instance = prepare_api(kube_config)
-    check_result, _ = check_chaosblade_exists(api_instance, namespace, pod)
-    print('Check result', check_result)
+    # check_result, _ = check_chaosblade_exists(api_instance, namespace, pod)
+    check_result = 'False'
+    #print('Check result', check_result)
     if check_result == 'False':
         print('Copy file')
         copy_tar_file_to_namespaced_pod(api_instance, namespace, pod, resource_path('./resources/chaosblade-exec'),
@@ -71,7 +72,11 @@ def chaosblade_jvm_prepare(args, kube_config, namespace, pod):
     print('Copy file finished')
     prepare_args = {'process': 'java'}
     prepare_command = chaosblade_prepare_script(chaosblade_prepare, prepare_args)
+     # print(prepare_command)
     prepare_msg, stderr = executor_command_inside_namespaced_pod(api_instance, namespace, pod, prepare_command)
+    if prepare_msg is None :
+        print("jvm_prepare timeout,please try again")
+        return
     print(prepare_msg, stderr)
     agent_uid = jsonpath.jsonpath(json.loads(prepare_msg), 'result')
     return agent_uid[0], api_instance, stderr
