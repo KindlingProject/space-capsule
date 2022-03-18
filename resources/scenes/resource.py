@@ -38,7 +38,7 @@ def case9(namespace, deploy, requests, limits):
               is_eager=True, callback=check_status,
               help="Check experiment history", expose_value=False)
 def case11(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests):
-        namespace_quota(namespace, cpu_limits, cpu_requests, mem_requests, mem_limits, 'case11',
+    namespace_quota(namespace, cpu_limits, cpu_requests, mem_requests, mem_limits, 'case11',
                     "Add namespace_quota in {}".format(namespace))
 
     print("namespace_quota injected done！")
