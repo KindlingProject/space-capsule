@@ -6,7 +6,7 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      {{ lable_name }}: {{ label_value }}
+      {{ label_name }}: {{ label_value }}
   ingress:
     - from:
         - podSelector:
