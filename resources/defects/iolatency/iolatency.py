@@ -155,16 +155,19 @@ class Toda(Daemon):
 
     def run(self):
         global process
-        print(self.cmd)
-        process = subprocess.Popen(self.cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
-                                   stderr=subprocess.PIPE)
-        flags = fcntl.fcntl(process.stdout, fcntl.F_GETFL)
-        fcntl.fcntl(process.stdout, fcntl.F_SETFL, flags | os.O_NONBLOCK)
-        self.send(self.args)
-        status = self.recv()
-        print(status)
-        signal.signal(signal.SIGTERM, signal_handler)
-        process.wait()
+        with open('/status', 'w+') as nsexec:
+            process = subprocess.Popen(self.cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                       stderr=nsexec)
+            flags = fcntl.fcntl(process.stdout, fcntl.F_GETFL)
+            fcntl.fcntl(process.stdout, fcntl.F_SETFL, flags | os.O_NONBLOCK)
+            self.send(self.args)
+            status = {
+                "cmd": self.args,
+                "status": self.recv().decode(encoding="utf-8")
+            }
+            print(json.dumps(status))
+            signal.signal(signal.SIGTERM, signal_handler)
+            process.wait()
 
     def send(self, data, tail='\n'):
         b = data + tail
@@ -186,16 +189,15 @@ class Toda(Daemon):
 
 
 def signal_handler(signal, frame):
-    process.kill()
+    process.terminate()
     sys.exit(0)
 
 
 if __name__ == "__main__":
     process = None
     daemon = Toda(
-        "/opt/nsexec/release/nsexec -l -p /proc/{}/ns/pid -m /proc/{}/ns/mnt --library-path /opt/nsexec/release/libnsenter.so -- /opt/toda/release/toda --path {} --verbose info",
-        "/stdout", "/stderr")
-    # daemon = Toda("/home/nejan/space-capsule/simpledaemon/{}", "args", "/stdout", "/stderr")
+        "/opt/nsexec/nsexec -l -p /proc/{}/ns/pid -m /proc/{}/ns/mnt --library-path /opt/nsexec/libnsenter.so -- /opt/toda/toda --path {} --verbose info",
+        "/stdout", "/dev/null")
     usageMessage = f"Usage: {sys.argv[0]} (start |stop|status)"
 
     choice = sys.argv[1]

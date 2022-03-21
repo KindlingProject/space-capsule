@@ -6,4 +6,4 @@ endef
 # CI build
 .PHONY: build
 build:
-	pyinstaller main.py  --name simpledaemon
+	pyinstaller iolatency.py  --name iolatency
