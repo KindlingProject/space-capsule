@@ -96,6 +96,11 @@ def namespace_quota_yaml(args):
     command = template.render(args)
     return command
 
+def network_policy_yaml(args):
+    template_file_name = 'network_policy.yaml'
+    template = template_env.get_template(template_file_name)
+    command = template.render(args)
+    return command
 
 def chaosblade_prepare(args):
     template_file_name = 'blade_prepare.sh'
