@@ -28,6 +28,7 @@ def case9(namespace, deploy, requests, limits):
              .format(requests, limits))
     print("resource limits injected done!")
 
+
 @click.command()
 @click.option('--namespace', 'namespace', default='practice')
 @click.option('--cpu_requests', 'cpu_requests', default='100m')
@@ -42,6 +43,7 @@ def case11(namespace, cpu_limits, mem_limits, cpu_requests, mem_requests):
                     "Add namespace_quota in {}".format(namespace))
 
     print("namespace_quota injected done！")
+
 
 @click.command()
 @click.option('--timeout', 'timeout')
