@@ -1,5 +1,7 @@
 # Space-capsule 太空舱计划
 
+<img src="https://user-images.githubusercontent.com/64676199/172799692-068e06cc-5283-4d8c-a835-03ab3d2a621f.png" width="200px">
+
 ## 项目介绍
 
 Kindling 是一款基于标准化错误定界和定位理念设计的开源监控工具，其设计和核心思路是，对于云上环境和容器环境中，应用程序可能出现的各种故障，能够以标准化的步骤，定位故障出现的位置和原因，而不依赖于用户对应用的了解或对k8s,linux知识的积累。
