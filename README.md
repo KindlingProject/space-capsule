@@ -22,9 +22,9 @@ Kindling 是一款基于标准化错误定界和定位理念设计的开源监�
     其他版本如不适配，请提issues，提pr更加欢迎
 ### k8s开始 
 1. 下载release到master节点(保证能执行kubectl命令即可)之后解压 
-2. 创建演示namespace -> kubectl create namespace practice
-3. cd space-capsule目录，执行./install.sh安装 [chaosblade-operator](https://github.com/chaosblade-io/chaosblade-operator) 和 示例应用
-- 执行 kubectl get po -n chaosblade 可查看chaosblade-operator是否安装成功
+2. 创建演示namespace -> `kubectl create namespace practice`
+3. `cd space-capsule`目录，执行`./install.sh`安装 [chaosblade-operator](https://github.com/chaosblade-io/chaosblade-operator) 和 示例应用
+- 执行 `kubectl get po -n chaosblade` 可查看chaosblade-operator是否安装成功
 ```
 
 NAME                                   READY   STATUS    RESTARTS   AGE
@@ -36,7 +36,7 @@ chaosblade-tool-987fq                  1/1     Running   3          12d
 chaosblade-tool-ksw9w                  1/1     Running   2          12d
 chaosblade-tool-mwt76                  1/1     Running   1          12d
 ```
-- 执行 kubectl get po -n practice 
+- 执行 `kubectl get po -n practice`
 可查看示例应用是否安装成功
 ```
 
@@ -69,7 +69,7 @@ risk-svc       ClusterIP   10.99.95.78     <none>        8080/TCP   35d
 rocketmq-svc   ClusterIP   10.99.95.77     <none>        8080/TCP   5d20h
 ```
 
-3. 使用 ./space-capsule case1 创建第一个故障场景 
+3. 使用 `./space-capsule case1` 创建第一个故障场景 
 
 ```
 [root@10 space-capsule-alpha]# ./space-capsule case12 --namespace practice --pod coreservice-67dd66b57c-hsm2b
@@ -81,7 +81,7 @@ Copy file finished
 agent ['01aa8dca66762cf7']
 slow_code injected done！
 ```
-4. 使用 ./space-capsule undo case1 还原第一个故障场景
+4. 使用 `./space-capsule undo case1` 还原第一个故障场景
 
 ```
 [root@10 space-capsule-alpha]# ./space-capsule undo case12
@@ -91,7 +91,7 @@ slow_code injected done！
 ## How to start on vm
 1. 下载release到主机节点之后解压
 2. cd space-capsule目录
-3. 使用 ./space-capsule case1-vm 创建第一个故障case，虚机加后缀-vm
+3. 使用 `./space-capsule case1-vm` 创建第一个故障case，虚机加后缀-vm
 
 ```
 [root@nginx space-capsule-alpha]# ls
@@ -99,7 +99,7 @@ example  history  install.sh  space-capsule
 [root@nginx space-capsule-alpha]# ./space-capsule case1-vm
 
 ```
-4.  使用 ./space-capsule undo case1 还原第一个故障场景
+4.  使用 `./space-capsule undo case1` 还原第一个故障场景
 
 ```
 [root@nginx space-capsule-alpha]# ./space-capsule undo case1-vm
@@ -107,7 +107,7 @@ example  history  install.sh  space-capsule
 ```
 ## 流量发送
 ### k8s jemter脚本及使用
-1. 位于/space-capsule/jemter文件夹下面
+1. 位于`/space-capsule/jemter`文件夹下面
 2. 修改用户定义的变量中ngIp，ngport为nginx暴露的端口或者nodeport方式暴露的端口
 3. 下发配置
 - 禁用start线程组，启用init线程组，执行。查看结果树，每个请求项data不为空表示配置下发成功。
