@@ -1,3 +1,5 @@
+import json
+
 import click
 
 # # 为 test-ns 下 label为 app=testdemo 的所有pod设置访问网络延时
@@ -19,7 +21,12 @@ import click
 
 # # space-capsule undo  {experiment-name}
 # space-capsule undo network-delay
+import jsonpath
+
+from resources.scenes.service_slow import select_pod_from_ready, field_selector
 from spacecapsule.executor import bash_executor
+from spacecapsule.history import store_experiment
+from spacecapsule.k8s import executor_command_inside_namespaced_pod, prepare_api
 from spacecapsule.template import chaosblade_resource, chaosblade_resource_script
 
 
@@ -33,7 +40,7 @@ from spacecapsule.template import chaosblade_resource, chaosblade_resource_scrip
 @click.option('--timeout', 'timeout')
 @click.option('--labels', 'labels')
 @click.option('--names', 'names')
-def diskfill(scope, experiment_name, path, size, reserve, percent, timeout, labels, names):
+def disk_fill(scope, experiment_name, path, size, reserve, percent, timeout, labels, names):
     args = locals()
     args['action'] = 'fill'
     args['target'] = 'disk'
@@ -72,6 +79,61 @@ def diskfill(scope, experiment_name, path, size, reserve, percent, timeout, labe
     # defects_info(args)
     bash_executor(chaosblade_resource_script, chaosblade_resource, rollback_args, 'chaosbladeResource-rollback.sh',
                   args)
+
+
+def disk_latency(pod, container, volume, methods, time, kube_config):
+    api_instance = prepare_api(kube_config)
+    pod_list = api_instance.list_namespaced_pod("practice")
+    if pod is None:
+        pod_ref = select_pod_from_ready(pod_list.items, None, None)
+    else:
+        pod_ref = select_pod_from_ready(pod_list.items, field_selector, {"key": "$.metadata.name", "value": pod})
+    host_ip = pod_ref.status.host_ip
+    containers_list = pod.ref.status.containerStatuses
+    if container is not None:
+        for container_ref in containers_list:
+            if container_ref.name == container:
+                container_id = container_ref.containerID
+                break
+    else:
+        container_id = containers_list[0].containerID
+
+    if container_id is None:
+        print("Can not found container named " + container + " in target pod")
+        exit(0)
+    commands = "docker inspect " + container_id + " -f {{.State.Pid}}"
+    daemon_list = api_instance.list_namespaced_pod('chaosblade')
+    for daemon in daemon_list.items:
+        if daemon.status.host_ip == host_ip:
+            stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade', daemon.metadata.name,
+                                                                    commands)
+            # TODO Execute command in daemonSet Pod
+            io_latency_commands = "/opt/iolatency/iolatency start "
+            executor_command_inside_namespaced_pod(api_instance, 'chaosblade', daemon.metadata.name,
+                                                   io_latency_commands)
+
+            check_status_command = "/opt/iolatency/iolatency status"
+            stdout, stderr = executor_command_inside_namespaced_pod(api_instance, 'chaosblade', daemon.metadata.name,
+                                                                    check_status_command)
+            status = jsonpath.jsonpath(json.loads(stdout), "$.status")
+            if status != "started":
+                # TODO failed reason
+                print("Inject Failed caused by ...!")
+
+            # TODO Store experiment into history
+            rollback_arg = {
+                "pod": daemon.metadata.name,
+                "namespace": 'chaosblade',
+                "command": "/opt/iolatency/iolatency stop"
+            }
+            experiment_arg = {
+
+            }
+            store_experiment(experiment_arg, rollback_arg, status, None)
+            print("IoLatency inject succeed!")
+            exit(0)
+
+    print("Can not found target pod to inject!")
 
 
 def rollback_args(args):
