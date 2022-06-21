@@ -4,13 +4,13 @@
 
 ## 项目介绍
 
-Kindling 是一款基于标准化错误定界和定位理念设计的开源监控工具，其设计和核心思路是，对于云上环境和容器环境中，应用程序可能出现的各种故障，能够以标准化的步骤，定位故障出现的位置和原因，而不依赖于用户对应用的了解或对k8s,linux知识的积累。
+Kindling 是一款基于标准化错误定界和定位理念设计的开源监控工具，其设计和核心思路是，对于云上环境和容器环境中，应用程序可能出现的各种故障，能够以标准化的步骤，定位故障出现的位置和原因，而不依赖于用户对应用的了解或对k8s、linux知识的积累。
 
 太空舱计划设计的目的是检验监控工具的标准化故障排查能力，推动Kindling项目的不断演进，以实现对各类故障的覆盖。
 
 项目中总结了一些常见的应用异常场景，这些异常场景由项目组的开发和运维经验整理而来，覆盖了云上项目各类异常场景，包括网络设备，运行资源，应用程序缺陷等多种原因。
 
-这些场景通过预设置的Demo应用和故障注入程序进行封装，可以在各种k8s环境和云主机环境中复现.
+这些场景通过预设置的Demo应用和故障注入程序进行封装，可以在各种k8s环境和云主机环境中复现。
 
 用户可以快捷的将自己的测试环境改造成太空舱环境，并部署演示应用，来自行注入故障以验证监控工具的错误检测和定界定位能力。
 
@@ -19,12 +19,12 @@ Kindling 是一款基于标准化错误定界和定位理念设计的开源监�
 ## How to start on K8s
 ### k8s版本支持
     v1.18.1 -> 1.23.1 已验证
-    其他版本如不适配，请提issues,提pr更加欢迎
+    其他版本如不适配，请提issues，提pr更加欢迎
 ### k8s开始 
 1. 下载release到master节点(保证能执行kubectl命令即可)之后解压 
-2. 创建演示namespace -> kubectl create namespace practice
-3. cd space-capsule目录,执行./install.sh安装 [chaosblade-operator](https://github.com/chaosblade-io/chaosblade-operator) 和 示例应用
-- 执行 kubectl get po -n chaosblade 可查看chaosblade-operator是否安装成功
+2. 创建演示namespace -> `kubectl create namespace practice`
+3. `cd space-capsule`目录，执行`./install.sh`安装 [chaosblade-operator](https://github.com/chaosblade-io/chaosblade-operator) 和 示例应用
+- 执行 `kubectl get po -n chaosblade` 可查看chaosblade-operator是否安装成功
 ```
 
 NAME                                   READY   STATUS    RESTARTS   AGE
@@ -36,7 +36,7 @@ chaosblade-tool-987fq                  1/1     Running   3          12d
 chaosblade-tool-ksw9w                  1/1     Running   2          12d
 chaosblade-tool-mwt76                  1/1     Running   1          12d
 ```
-- 执行 kubectl get po -n practice 
+- 执行 `kubectl get po -n practice`
 可查看示例应用是否安装成功
 ```
 
@@ -69,7 +69,7 @@ risk-svc       ClusterIP   10.99.95.78     <none>        8080/TCP   35d
 rocketmq-svc   ClusterIP   10.99.95.77     <none>        8080/TCP   5d20h
 ```
 
-3. 使用 ./space-capsule case1 创建第一个故障场景 
+3. 使用 `./space-capsule case1` 创建第一个故障场景 
 
 ```
 [root@10 space-capsule-alpha]# ./space-capsule case12 --namespace practice --pod coreservice-67dd66b57c-hsm2b
@@ -81,7 +81,7 @@ Copy file finished
 agent ['01aa8dca66762cf7']
 slow_code injected done！
 ```
-4. 使用 ./space-capsule undo case1 还原第一个故障场景
+4. 使用 `./space-capsule undo case1` 还原第一个故障场景
 
 ```
 [root@10 space-capsule-alpha]# ./space-capsule undo case12
@@ -91,7 +91,7 @@ slow_code injected done！
 ## How to start on vm
 1. 下载release到主机节点之后解压
 2. cd space-capsule目录
-3. 使用 ./space-capsule case1-vm 创建第一个故障case，虚机加后缀-vm
+3. 使用 `./space-capsule case1-vm` 创建第一个故障case，虚机加后缀-vm
 
 ```
 [root@nginx space-capsule-alpha]# ls
@@ -99,7 +99,7 @@ example  history  install.sh  space-capsule
 [root@nginx space-capsule-alpha]# ./space-capsule case1-vm
 
 ```
-4.  使用 ./space-capsule undo case1 还原第一个故障场景
+4.  使用 `./space-capsule undo case1` 还原第一个故障场景
 
 ```
 [root@nginx space-capsule-alpha]# ./space-capsule undo case1-vm
@@ -107,8 +107,8 @@ example  history  install.sh  space-capsule
 ```
 ## 流量发送
 ### k8s jemter脚本及使用
-1. 位于/space-capsule/jemter文件夹下面
-2. 修改用户定义的变量中ngIp,ngport为nginx暴露的端口或者nodeport方式暴露的端口
+1. 位于`/space-capsule/jemter`文件夹下面
+2. 修改用户定义的变量中ngIp，ngport为nginx暴露的端口或者nodeport方式暴露的端口
 3. 下发配置
 - 禁用start线程组，启用init线程组，执行。查看结果树，每个请求项data不为空表示配置下发成功。
 ```
@@ -226,7 +226,7 @@ graph LR;
 
 ## 缺陷注入
 
-- 支持出网和入网流量延迟和丢包场景，支持以下粒度: node,workload,pod,containers
-- 支持资源抢占场景，包括 cpu，mem和disk资源, 支持以下粒度: node,workload,pod,containers
+- 支持出网和入网流量延迟和丢包场景，支持以下粒度: node、workload、pod、containers
+- 支持资源抢占场景，包括 cpu，mem和disk资源，支持以下粒度: node、workload、pod、containers
 - 支持k8s资源限制场景，包括cpu，memory和ephemeral storage的requests，limit限制
-- 支持Java应用程序异常场景，包括死锁，资源异常使用，RuntimeError, 外部资源阻塞等情况
+- 支持Java应用程序异常场景，包括死锁，资源异常使用，RuntimeError，外部资源阻塞等情况
