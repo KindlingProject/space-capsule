@@ -103,6 +103,7 @@ def chaosblade_ssh_executor(ip, user, pwd, command, experiment_name):
     exec_msg = stdout.readline().replace('\n', '')
     experiment_uid = jsonpath.jsonpath(json.loads(exec_msg), 'result')
     args['rollback_command'] = '/opt/chaosblade/blade destroy ' + experiment_uid[0]
+    args.update(desc=args)
     store_experiment(args, rollback_command('chaosblade-ssh-rollback.sh', args), exec_msg, stderr.read().decode())
 
 

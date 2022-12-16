@@ -2,7 +2,7 @@ import click
 
 from resources.scenes.jvm_inject import case14, case12, case13, case15
 from resources.scenes.resource import case8, case9, case11
-from resources.scenes.service_dns import case6
+from resources.scenes.service_dns import case6, case6_1
 from resources.scenes.network_policy import case5
 from resources.scenes.service_loss import case3, case4
 from resources.scenes.service_slow import case2, case1
